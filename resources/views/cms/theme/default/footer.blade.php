@@ -3,8 +3,8 @@
     $menu = \SolutionForest\FilamentCms\Facades\FilamentCms::getNavigation('footer') ?? [];
 @endphp
 <section class="relative">
-    <div class="w-full md:w-2/3 container px-10 py-96 flex items-center justify-center before:content-[''] before:w-1/2 before:absolute before:top-1/2 before:right-0 before:bottom-0 before:left-1/2 before:transform before:-translate-x-1/2 before:-translate-y-1/2 before:bg-secondary before:rotate-[2deg] before:rounded-3xl before:-z-20
-        after:content-[''] after:w-1/2 after:absolute after:top-1/2 after:right-0 after:bottom-0 after:left-1/2 after:transform after:-translate-x-1/2 after:-translate-y-1/2 after:bg-primary after:rotate-[-2deg] after:rounded-3xl
+    <div class="w-full md:w-2/3 container px-10 py-96 flex items-center justify-center before:content-[''] before:w-full md:before:w-1/2 before:absolute before:top-1/2 md:before:right-0 before:bottom-0 before:left-1/2 before:transform before:-translate-x-1/2 before:-translate-y-1/2 before:bg-secondary md:before:rotate-[2deg] before:rounded-3xl before:-z-20
+        after:content-[''] after:w-full md:after:w-1/2 after:absolute after:top-1/2 md:after:right-0 after:bottom-0 after:left-1/2 after:transform after:-translate-x-1/2 after:-translate-y-1/2 after:bg-primary md:after:rotate-[-2deg] after:rounded-3xl
          after:-z-10">
         <div>
             <h1 class="text-center text-white font-bold text-4xl">أشترك في القائمة البريدية  <br>
@@ -17,7 +17,7 @@
     </div>
 </section>
 <footer class="relative bg-light-gray pt-48 -mt-80 -z-50">
-    <div class="container flex justify-between items-start">
+    <div class="container flex justify-between items- flex-col md:flex-row space-y-5">
         <div class="w-1/3">
             <a href="/"><img src="{{ asset('image/logo.svg') }}" alt=""></a>
             <p class="text-gray-600 mt-3">وزارة التجارة والصناعة وترويج الاستثمار, PO Box 550, مسقط 100,سلطنة عمان</p>
@@ -29,7 +29,7 @@
             </div>
         </div>
         <div class="">
-            <div class="grid grid-cols-4 gap-10">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-10">
                 <div class="flex flex-col">
                     <h1 class="mb-5 text-lg font-bold text-primary">من نحن</h1>
                     <ul class="space-y-3">

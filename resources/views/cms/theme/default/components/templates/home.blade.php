@@ -68,6 +68,20 @@
             z-index: 0;
         }
 
+        @media (max-width: 768px) {
+            .slider-container #item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
+                transform: translateX(-40%) scale(0.8);
+                opacity: 0.4;
+                z-index: 0;
+            }
+
+            .slider-container #item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
+                transform: translateX(40%) scale(0.8);
+                opacity: 0.4;
+                z-index: 0;
+            }
+        }
+
         .slider-container #item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 {
             transform: translatex(0) scale(1);
             opacity: 1;
@@ -177,11 +191,11 @@
     </style>
 
     <div class="container">
-        <section class="container flex items-center bg-light-gray rounded-2xl p-10">
-            <div class="grid grid-cols-1 md:grid-cols-2  gap-8">
+        <section class="container flex items-center bg-light-gray rounded-2xl p-10 md:py-20 overflow-hidden md:overflow-visible">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-8">
                 <div class="info order-2 md:order-1">
                     <div id="info-1" class="">
-                        <h1 class="text-gray-900 text-5xl font-bold mb-4 leading-relaxed">{{ $page->data['slider_1_title'] }}</h1>
+                        <h1 class="text-gray-900 text-3xl md:text-5xl font-bold mb-2 md:mb-5 leading-relaxed">{{ $page->data['slider_1_title'] }}</h1>
                         <p class="mb-5">{{ $page->data['slider_1_description'] }}</p>
                         <div class="flex">
                             <a href="{{ $page->data['slider_1_primary_button_link'] }}"
@@ -191,7 +205,7 @@
                         </div>
                     </div>
                     <div id="info-2" class="hidden">
-                        <h1 class="text-gray-900 text-5xl font-bold mb-4 leading-relaxed">{{ $page->data['slider_2_title'] }}</h1>
+                        <h1 class="text-gray-900 text-3xl md:text-5xl font-bold mb-2 md:mb-5 leading-relaxed">{{ $page->data['slider_2_title'] }}</h1>
                         <p class="mb-5">{{ $page->data['slider_2_description'] }}</p>
                         <div class="flex">
                             <a href="{{ $page->data['slider_2_primary_button_link'] }}"
@@ -201,7 +215,7 @@
                         </div>
                     </div>
                     <div id="info-3" class="hidden">
-                        <h1 class="text-gray-900 text-5xl font-bold mb-4 leading-relaxed">{{ $page->data['slider_3_title'] }}</h1>
+                        <h1 class="text-gray-900 text-3xl md:text-5xl font-bold mb-2 md:mb-5 leading-relaxed">{{ $page->data['slider_3_title'] }}</h1>
                         <p class="mb-5">{{ $page->data['slider_3_description'] }}</p>
                         <div class="flex">
                             <a href="{{ $page->data['slider_3_primary_button_link'] }}"
@@ -241,15 +255,15 @@
             </div>
         </section>
 
-        <section class="w-full mx-auto flex p-6 bg-secondary mt-32 rounded-3xl"
+        <section class="w-full mx-auto flex p-6 bg-secondary mt-32 rounded-3xl flex-col md:flex-row"
                  style="box-shadow: 19px 19px 0px #C54139">
-            <div class="w-1/3 bg-primary rounded-2xl flex items-center justify-center">
+            <div class="w-full md:w-1/3 mb-6 md:mb-0 bg-primary rounded-2xl flex items-center justify-center">
                 <img src="{{ asset('image/Haitham-binTariq-AlSaid-min.svg') }}" alt="">
             </div>
-            <div class="flex flex-col items-center justify-center w-2/3">
+            <div class="flex flex-col items-center justify-center w-full md:w-2/3">
                 <img src="{{ asset('image/Group 197.svg') }}" class="mb-7" alt="">
-                <h1 class="text-4xl text-gray-700">لمولانا حضرة صاحب الجلالة السلطان</h1>
-                <h1 class="text-4xl text-primary font-bold mt-5">هيثم بن طارق المعظم - حفظة الله ورعاه</h1>
+                <h1 class="text-4xl text-gray-700 text-center">لمولانا حضرة صاحب الجلالة السلطان</h1>
+                <h1 class="text-4xl text-primary font-bold mt-5 text-center">هيثم بن طارق المعظم - حفظة الله ورعاه</h1>
                 <img src="{{ asset('image/Group 199.svg') }}" class="mt-10" alt="">
                 <h1 class="text-2xl text-primary font-bold mt-5 text-center">ونعاهد جلالة السلطان المعظم بالعمل الجاد في
                     خدمة عُمان وشعبها الأبي في ظل القيادة الحكيمة</h1>

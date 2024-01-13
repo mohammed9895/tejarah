@@ -20,3 +20,5 @@ item3.addEventListener('click', function () {
     info1.classList.add('hidden')
     info2.classList.add('hidden')
 });
+
+require('vanilla-headless')

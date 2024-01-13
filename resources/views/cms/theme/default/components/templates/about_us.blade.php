@@ -15,8 +15,8 @@
     <x-partials.title title="{{ $page->title }}"
                       description="{{ $page->data['content'] }}"></x-partials.title>
 
-    <section class="container bg-light-gray rounded-lg">
-        <div class="flex justify-between">
+    <section class="container bg-light-gray rounded-lg sticky top-0 z-30">
+        <div class="flex justify-between flex-col md:flex-row">
             <a href="#speech-of-his-excellency-the-minister" class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent">
                 <h2 class="text-gray-500 mb-4">01</h2>
                 <h1 class="text-xl font-bold text-gray-700">كلمة معالي الوزير</h1>
@@ -47,6 +47,62 @@
             </a>
         </div>
     </section>
+
+    <!-- require tailwindcss for example -->
+    <headless-dropdown class="relative inline-block text-left" placement="bottom-end bottom" popper>
+        <div>
+            <button
+                aria-expanded="true"
+                aria-haspopup="true"
+                class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
+                id="menu-button"
+                type="button"
+            >
+                Dropdown
+                <!-- Heroicon name: solid/chevron-down -->
+                <svg aria-hidden="true" class="-mr-1 ml-2 h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path clip-rule="evenodd"
+                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                          fill-rule="evenodd" />
+                </svg>
+            </button>
+        </div>
+
+        <div
+            aria-labelledby="menu-button"
+            aria-orientation="vertical"
+            class="origin-top-right absolute w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+            role="menu"
+            tabindex="-1"
+        >
+            <div class="py-1" role="none">
+                <a class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                   href="#account" id="menu-item-0" role="menuitem" tabindex="-1"
+                >Account settings</a
+                >
+                <a class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                   href="#support" id="menu-item-1" role="menuitem" tabindex="-1"
+                >Support</a
+                >
+                <a class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                   href="#license" id="menu-item-2" role="menuitem" tabindex="-1"
+                >License</a
+                >
+                <form action="#test" method="POST" role="none">
+                    <button
+                        class="text-gray-700 block w-full text-left px-4 py-2 text-sm hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
+                        id="menu-item-3"
+                        role="menuitem"
+                        tabindex="-1"
+                        type="submit"
+                    >
+                        Sign out
+                    </button>
+                </form>
+            </div>
+        </div>
+    </headless-dropdown>
 
     <section id="speech-of-his-excellency-the-minister" class="py-36 container">
         <div class="flex justify-between items-center">
