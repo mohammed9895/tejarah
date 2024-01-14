@@ -15,26 +15,26 @@
     <x-partials.title title="{{ $page->title }}"
                       description="{{ $page->data['content'] }}"></x-partials.title>
 
-    <section class="container bg-light-gray rounded-lg">
-        <div class="flex justify-between">
+    <section class="container bg-light-gray/60 backdrop-blur-2xl md:rounded-lg sticky top-0 z-30 overflow-x-scroll navbar">
+        <div class="flex justify-between whitespace-nowrap nav-container">
             <a href="#2024_vision"
-               class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent">
+               class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
                 <h2 class="text-gray-500 mb-4">01</h2>
                 <h1 class="text-xl font-bold text-gray-700">رؤية عُمان 2040</h1>
             </a>
             <a href="#featurs" -
-               class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent">
+               class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
                 <h2 class="text-gray-500 mb-4">02</h2>
                 <h1 class="text-xl font-bold text-gray-700">المزايا التنافسية في سلطنة عُمان</h1>
             </a>
             <a href="#success-framework"
-               class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent">
+               class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
                 <h2 class="text-gray-500 mb-4">03</h2>
                 <h1 class="text-xl font-bold text-gray-700">إطار النجاح</h1>
             </a>
             <a href="#investor-residency-program"
-               class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent">
-                <h2 class="text-gray-500 mb-4">03</h2>
+               class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-10 pl-6">
+                <h2 class="text-gray-500 mb-4">04</h2>
                 <h1 class="text-xl font-bold text-gray-700">برنامج إقامة مستثمر</h1>
             </a>
         </div>
@@ -514,112 +514,67 @@
                             <div
                                 class="flex w-full flex-wrap items-start justify-around gap-10 min-[600px]:w-auto min-[600px]:flex-col min-[630px]:hidden">
 
-                                <a href="https://tailwindcss.com" target="_blank"
+                                <a href="https://www.oman2040.om/" target="_blank"
                                    class="group/tall-link flex items-center gap-3 transition duration-300 motion-reduce:transition-none">
 
                                     <div class="grid w-8 place-items-center">
-                                        <svg class="w-7" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                             viewBox="0 0 54 33">
-                                            <g clip-path="url(#prefix__clip0)">
-                                                <path fill="#38bdf8" fill-rule="evenodd"
-                                                      d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"
-                                                      clip-rule="evenodd"></path>
-                                            </g>
-                                            <defs>
-                                                <clipPath id="prefix__clip0">
-                                                    <path fill="#fff" d="M0 0h54v32.4H0z"></path>
-                                                </clipPath>
-                                            </defs>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 text-primary">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"></path>
                                         </svg>
                                     </div>
 
                                     <div class="flex items-end">
-                                        <span class="text-2xl font-bold">T</span>
                                         <span
                                             class="relative -left-0.5 text-lg transition duration-500 motion-reduce:transition-none">
-                                ailwind CSS
-                            </span>
+الإنسان والمجتمع
+                                        </span>
                                     </div>
                                 </a>
 
-                                <a href="https://alpinejs.dev" target="_blank"
+                                <a href="https://www.oman2040.om/" target="_blank"
                                    class="group/tall-link flex items-center gap-3 transition duration-300 motion-reduce:transition-none">
 
                                     <div class="grid w-8 place-items-center">
-                                        <svg class="scale-90" width="32" height="16" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                  d="m24.657.653 7.045 7.066-7.045 7.066-7.044-7.066L24.657.653Z"
-                                                  fill="#77C1D2"></path>
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                  d="m7.045.653 14.605 14.65H7.56L0 7.718 7.045.653Z"
-                                                  fill="#2D3441"></path>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 text-primary">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605"></path>
                                         </svg>
                                     </div>
 
                                     <div class="flex items-end gap-px">
-                                        <span class="text-2xl font-bold">A</span>
                                         <span class="text-lg transition duration-500 motion-reduce:transition-none">
-                                lpine.js
+                                 الاقتصاد والتنمية
                             </span>
                                     </div>
                                 </a>
 
-                                <a href="https://laravel.com" target="_blank"
+                                <a href="https://www.oman2040.om/" target="_blank"
                                    class="group/tall-link flex items-center gap-3 transition duration-300 motion-reduce:transition-none">
 
                                     <div class="grid w-8 place-items-center">
-                                        <svg width="23" height="25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                  d="M22.37 6.03a.38.38 0 0 1 .013.095v5.045a.375.375 0 0 1-.181.319l-4.151 2.438v4.831a.376.376 0 0 1-.181.32l-8.665 5.088c-.02.012-.041.018-.062.026-.009.003-.017.008-.025.01a.355.355 0 0 1-.185 0c-.01-.002-.019-.008-.028-.012a.322.322 0 0 1-.06-.024L.181 19.078a.375.375 0 0 1-.18-.32V3.625c0-.033.003-.065.012-.096.002-.012.009-.021.012-.031.007-.02.014-.04.024-.058.006-.012.016-.021.024-.032.01-.015.02-.03.032-.043.01-.011.024-.019.036-.028.013-.01.024-.022.04-.031L4.513.76a.357.357 0 0 1 .36 0l4.332 2.544h.001c.015.01.026.022.04.032.012.01.025.017.035.028.013.012.022.028.032.043.008.01.018.02.025.032.01.018.016.038.023.058.004.01.01.02.013.03a.38.38 0 0 1 .012.097v9.452l3.61-2.12V6.125a.38.38 0 0 1 .013-.096c.003-.011.009-.02.013-.03.007-.02.013-.04.023-.058.007-.012.017-.022.025-.032.01-.015.02-.03.032-.043.01-.011.023-.019.035-.028.013-.01.025-.023.04-.031l4.333-2.545a.356.356 0 0 1 .36 0l4.332 2.544c.015.01.027.021.04.031.012.01.025.018.036.028.012.013.021.029.032.043.008.011.018.02.024.033.01.018.017.038.024.057.004.01.01.02.012.031Zm-.709 4.927V6.762l-1.516.89-2.094 1.23v4.195l3.61-2.12Zm-4.332 7.588v-4.197l-2.06 1.2-5.883 3.424v4.237l7.943-4.664ZM.722 4.261v14.285l7.942 4.664v-4.237l-4.149-2.395v-.001h-.003c-.014-.009-.025-.02-.038-.031-.012-.01-.025-.017-.035-.027v-.001c-.012-.012-.02-.026-.03-.039-.01-.012-.02-.023-.027-.035v-.002c-.009-.014-.014-.03-.02-.046-.006-.014-.013-.026-.017-.041-.005-.018-.005-.037-.007-.055-.002-.014-.006-.027-.006-.041V6.38L2.24 5.151l-1.517-.89Zm3.971-2.756-3.608 2.12 3.608 2.119 3.609-2.12-3.609-2.119ZM6.57 14.73l2.094-1.23V4.262l-1.516.89-2.094 1.23v9.24l1.516-.89ZM17.69 4.006l-3.609 2.12 3.609 2.118 3.608-2.119-3.608-2.119Zm-.361 4.876-2.094-1.23-1.516-.89v4.195l2.094 1.23 1.516.89V8.882Zm-8.304 9.453 5.293-3.082 2.646-1.54-3.606-2.118-4.153 2.438-3.784 2.222 3.604 2.08Z"
-                                                  fill="#FF2D20"></path>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 text-primary">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z"></path>
                                         </svg>
                                     </div>
 
                                     <div class="flex items-end gap-px">
-                                        <span class="text-2xl font-bold">L</span>
                                         <span class="text-lg transition duration-500 motion-reduce:transition-none">
-                                aravel
+                                 الحوكمة والأداء المؤسسي
                             </span>
                                     </div>
                                 </a>
 
-                                <a href="https://laravel-livewire.com" target="_blank"
+                                <a href="https://www.oman2040.om/" target="_blank"
                                    class="group/tall-link flex items-center gap-3 transition duration-300 motion-reduce:transition-none">
 
                                     <div class="grid w-8 place-items-center">
-                                        <svg width="24" height="27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                  d="M22.415 17.96c-.438.662-.77 1.478-1.66 1.478-1.5 0-1.58-2.31-3.08-2.31-1.498 0-1.417 2.31-2.916 2.31-1.498 0-1.579-2.31-3.078-2.31-1.5 0-1.418 2.31-2.916 2.31-1.499 0-1.58-2.31-3.079-2.31s-1.418 2.31-2.916 2.31c-.471 0-.802-.228-1.081-.541A12.796 12.796 0 0 1 0 12.507C0 5.663 5.287.115 11.809.115c6.521 0 11.808 5.548 11.808 12.392 0 1.957-.432 3.807-1.202 5.453Z"
-                                                  fill="#FB70A9"></path>
-                                            <path
-                                                d="M7.093 16.737v5.132a1.668 1.668 0 1 1-3.336 0v-6.196c.312-.571.667-1.066 1.308-1.066 1.044 0 1.408 1.31 2.028 2.13Zm6.3.267v8.117a1.853 1.853 0 0 1-3.706 0v-9.187c.35-.673.709-1.327 1.446-1.327 1.167 0 1.485 1.64 2.26 2.397Zm5.93-.149v5.892a1.668 1.668 0 0 1-3.335 0v-7.242c.29-.497.636-.898 1.213-.898 1.096 0 1.443 1.445 2.122 2.248Z"
-                                                fill="#4E56A6"></path>
-                                            <path
-                                                d="M7.093 18.31c-.296-.362-.646-.631-1.152-.631-1.203 0-1.424 1.515-2.183 2.199V13.34a1.668 1.668 0 1 1 3.335 0v4.97Zm6.3.117c-.315-.42-.684-.748-1.244-.748-1.337 0-1.46 1.876-2.462 2.394v-2.89a1.853 1.853 0 1 1 3.707 0v1.244Zm5.93-.325c-.256-.253-.56-.423-.965-.423-1.296 0-1.451 1.76-2.37 2.342v-5.869a1.668 1.668 0 0 1 3.335 0v3.95Z"
-                                                fill="#000" fill-opacity=".299"></path>
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                  d="M22.415 17.96c-.438.662-.77 1.478-1.66 1.478-1.5 0-1.58-2.31-3.08-2.31-1.498 0-1.417 2.31-2.916 2.31-1.498 0-1.579-2.31-3.078-2.31-1.5 0-1.418 2.31-2.916 2.31-1.499 0-1.58-2.31-3.079-2.31s-1.418 2.31-2.916 2.31c-.471 0-.802-.228-1.081-.541A12.796 12.796 0 0 1 0 12.507C0 5.663 5.287.115 11.809.115c6.521 0 11.808 5.548 11.808 12.392 0 1.957-.432 3.807-1.202 5.453Z"
-                                                  fill="#FB70A9"></path>
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                  d="M19.86 19.191c3.094-4.603 3.174-9.71.24-15.319a12.36 12.36 0 0 1 3.517 8.66c0 1.95-.448 3.794-1.246 5.434-.454.66-.799 1.472-1.721 1.472-.316 0-.571-.095-.79-.247Z"
-                                                  fill="#E24CA6"></path>
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                  d="M11.175 15.598c4.107 0 5.836-2.382 5.836-5.765 0-3.384-2.613-6.498-5.835-6.498-3.223 0-5.836 3.114-5.836 6.498 0 3.383 1.73 5.765 5.835 5.765Z"
-                                                  fill="#fff"></path>
-                                            <path
-                                                d="M9.607 10.024c1.208 0 2.188-1.081 2.188-2.415s-.98-2.416-2.188-2.416c-1.21 0-2.189 1.082-2.189 2.416 0 1.334.98 2.415 2.189 2.415Z"
-                                                fill="#030776"></path>
-                                            <path
-                                                d="M9.242 8.166c.604 0 1.094-.499 1.094-1.115 0-.615-.49-1.114-1.094-1.114-.605 0-1.095.499-1.095 1.114 0 .616.49 1.115 1.095 1.115Z"
-                                                fill="#fff"></path>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 text-primary">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.115 5.19l.319 1.913A6 6 0 008.11 10.36L9.75 12l-.387.775c-.217.433-.132.956.21 1.298l1.348 1.348c.21.21.329.497.329.795v1.089c0 .426.24.815.622 1.006l.153.076c.433.217.956.132 1.298-.21l.723-.723a8.7 8.7 0 002.288-4.042 1.087 1.087 0 00-.358-1.099l-1.33-1.108c-.251-.21-.582-.299-.905-.245l-1.17.195a1.125 1.125 0 01-.98-.314l-.295-.295a1.125 1.125 0 010-1.591l.13-.132a1.125 1.125 0 011.3-.21l.603.302a.809.809 0 001.086-1.086L14.25 7.5l1.256-.837a4.5 4.5 0 001.528-1.732l.146-.292M6.115 5.19A9 9 0 1017.18 4.64M6.115 5.19A8.965 8.965 0 0112 3c1.929 0 3.716.607 5.18 1.64"></path>
                                         </svg>
                                     </div>
 
                                     <div class="flex items-end gap-px">
-                                        <span class="text-2xl font-bold">L</span>
                                         <span class="text-lg transition duration-500 motion-reduce:transition-none">
-                                ivewire
+                                البيئة المستدامة
                             </span>
                                     </div>
                                 </a>
@@ -713,11 +668,11 @@
     </section>
 
     <section class="py-16 container">
-        <div class="flex items-center justify-center">
+        <div class="flex flex-col md:flex-row items-center justify-center">
             <div>
                 <img src="/storage/{{ $page->data['international_success_main_image'] }}" alt="">
             </div>
-            <div class="flex items-start flex-col w-1/3 rtl:-mr-24">
+            <div class="flex items-start flex-col w-full md:w-1/3 md:rtl:-mr-24">
                 <div class="relative text-gray-800 text-center mb-5">
                     <h1 class="text-3xl font-bold mb-5">{{ $page->data['international_success_main_title'] }}</h1>
                     <div class="w-48 h-4 bg-secondary mx-auto -mt-10"></div>
@@ -751,14 +706,14 @@
         </div>
     </section>
 
-    <section class="py-24 container flex items-center" id="support_investors">
+    <section class="py-24 container flex flex-col md:flex-row items-center" id="support_investors">
         <div class="w-full md:w-2/5">
             <div
                 class="bg-secondary relative rounded-3xl py-5 flex items-center justify-center border-2 border-primary">
                 <img src="/storage/{{ $page->data['infrastructure_image'] }}" class="w-[90%]" alt="">
             </div>
         </div>
-        <div class="flex-1 mr-5">
+        <div class="flex-1 mr-5 mt-16 md:mt-0">
             <div class="relative text-gray-800 mb-10">
                 <h1 class="text-3xl font-bold mb-5">{{ $page->data['infrastructure_main_title'] }}</h1>
                 <div class="w-52 h-4 bg-secondary -mt-10"></div>
@@ -772,14 +727,14 @@
 
     <section class="py-24 container" id="support_investors">
         <div class="grid grid-cols-1 md:grid-cols-2">
-            <div class="text-white bg-primary p-10 rounded-r-2xl">
+            <div class="text-white bg-primary p-10 rounded-t-2xl md:rounded-r-2xl">
                 <div class="relative">
                     <h1 class="text-white font-bold text-2xl z-30 relative">{{ $page->data['cost_col_1_title'] }}</h1>
                     <img src="{{ asset('image/traingol.svg') }}" class="absolute right-0 top-0 z-10" alt="">
                 </div>
                 <p class="text-white leading-loose mt-3">{{ $page->data['cost_col_1_description'] }}</p>
             </div>
-            <div class="text-white bg-light-gray p-10 rounded-l-2xl">
+            <div class="text-white bg-light-gray p-10 rounded-b-2xl md:rounded-l-2xl">
                 <div class="relative">
                     <h1 class="text-primary font-bold text-2xl z-30 relative">{{ $page->data['cost_col_2_title'] }}</h1>
                     <img src="{{ asset('image/traingol.svg') }}" class="absolute right-0 top-0 z-10" alt="">
@@ -822,8 +777,8 @@
             <p class="mt-5">{{ $page->data['success_framework_main_description'] }}</p>
         </div>
         <div class="flex items-center justify-center">
-            <div class="relative w-[857px] h-[851px] rounded-3xl p-10 flex items-end"
-                 style="background: url('{{ asset('image/talent.svg') }}'); background-size: cover;">
+            <div class="relative w-[857px] h-[851px] rounded-3xl p-5 md:p-10 flex items-end"
+                 style="background: url('{{ asset('image/talent.svg') }}'); background-size: cover; background-position:  center center;">
                 <div class="bg-white/30 backdrop-blur-2xl p-10 rounded-2xl">
                     <div class="relative text-gray-800 text-center">
                         <h1 class="text-3xl font-bold mb-5">{{ $page->data['talents_main_title'] }}</h1>
@@ -831,19 +786,19 @@
                         <p class="mt-6 leading-loose">{{ $page->data['talents_main_description'] }}</p>
                     </div>
                 </div>
-                <img src="{{ asset('image/2-traingol.svg') }}" class="absolute -top-10 -right-10 w-32" alt="">
-                <img src="{{ asset('image/cercle-2.svg') }}" class="absolute top-1/2 -left-10 w-32" alt="">
+                <img src="{{ asset('image/2-traingol.svg') }}" class="absolute -top-10 -right-10 w-32 hidden md:block" alt="">
+                <img src="{{ asset('image/cercle-2.svg') }}" class="absolute top-1/2 -left-10 w-32 hidden md:block" alt="">
             </div>
         </div>
     </section>
 
     <section class="py-24 container" id="support_investors">
         <div class="grid grid-cols-1 md:grid-cols-2">
-            <div class="text-white rounded-r-2xl rounded-b-none"
+            <div class="text-white rounded-t-2xl md:rounded-r-2xl rounded-b-none w-full h-96 md:h-auto"
                  style="background: url('/storage/{{ $page->data['natural_col_2_image'] }}'); background-size: cover; background-position: top center;">
 
             </div>
-            <div class="text-white bg-primary px-10 py-24 rounded-l-2xl rounded-b-none">
+            <div class="text-white bg-primary px-10 py-24 rounded-none md:rounded-l-2xl rounded-b-none">
                 <div class="relative">
                     <h1 class="text-white font-bold text-2xl z-30 relative">{{ $page->data['natural_col_1_title'] }}</h1>
                 </div>
@@ -851,7 +806,7 @@
                     {{ $page->data['natural_col_1_description'] }}
                 </p>
             </div>
-            <div class="text-white bg-light-gray px-10 py-24 rounded-r-2xl rounded-t-none">
+            <div class="text-white bg-light-gray px-10 py-24 rounded-none md:rounded-r-2xl rounded-t-none">
                 <div class="relative">
                     <h1 class="text-primary font-bold text-2xl z-30 relative">{{ $page->data['natural_col_2_title'] }}</h1>
                 </div>
@@ -859,7 +814,7 @@
                     {{ $page->data['natural_col_2_description'] }}
                 </p>
             </div>
-            <div class="text-white rounded-l-2xl rounded-t-none"
+            <div class="text-white rounded-b-2xl md:rounded-l-2xl rounded-t-none w-full h-96 md:h-auto"
                  style="background: url('/storage/{{ $page->data['natural_col_2_image'] }}'); background-size: cover; background-position: top center;">
 
             </div>
@@ -874,7 +829,7 @@
                 {{ $page->data['investor_residency_program_description'] }}
             </p>
         </div>
-        <div class="w-full flex">
+        <div class="w-full flex flex-col md:flex-row">
             <div class="flex items-center justify-center w-full md:w-1/2">
                 <div>
                     <img src="{{ asset('image/goals.svg') }}" alt="">
@@ -910,14 +865,14 @@
             <div class="w-80 h-4 bg-secondary mx-auto -mt-10"></div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 mt-6">
-            <div class="text-white bg-primary p-10 rounded-r-2xl">
+            <div class="text-white bg-primary p-10 rounded-t-2xl md:rounded-r-2xl">
                 <div class="relative">
                     <h1 class="text-white font-bold text-2xl z-30 relative">{{ $page->data['investor_residency_program_category_1_title'] }}</h1>
                     <img src="{{ asset('image/traingol.svg') }}" class="absolute right-0 top-0 z-10" alt="">
                 </div>
                 {!! $page->data['investor_residency_program_category_1_description'] !!}
             </div>
-            <div class="text-white bg-light-gray p-10 rounded-l-2xl">
+            <div class="text-white bg-light-gray p-10  rounded-b-2xl md:rounded-l-2xl">
                 <div class="relative">
                     <h1 class="text-primary font-bold text-2xl z-30 relative">{{ $page->data['investor_residency_program_category_2_title'] }}</h1>
                     <img src="{{ asset('image/traingol.svg') }}" class="absolute right-0 top-0 z-10" alt="">
@@ -930,7 +885,7 @@
     <section class="py-24 container" id="support_investors">
         <div class="relative text-gray-800 text-center mb-10">
             <h1 class="text-3xl font-bold mb-5">{{ $page->data['investor_residency_program_roles_title'] }}</h1>
-            <div class="w-80 h-4 bg-secondary mx-auto -mt-10"></div>!!
+            <div class="w-80 h-4 bg-secondary mx-auto -mt-10"></div>
         </div>
 
         <div class="grid grid-cols-2 md:grid-cols-3 gap-8 mt-24">
@@ -963,12 +918,12 @@
     </section>
 
     <section class="py-36">
-        <div class="container bg-secondary rounded-3xl flex items-center justify-between p-10">
-            <div class="w-1/3 relative">
+        <div class="container bg-secondary rounded-3xl flex flex-col md:flex-row items-center justify-between p-10">
+            <div class="w-full md:w-1/3 relative">
                 <img src="{{ asset('image/contact.svg') }}" class="rounded" alt="">
                 <img src="{{ asset('image/arrow.svg') }}" class="absolute -top-10 -right-10 w-36" alt="">
             </div>
-            <div class="flex-1 mr-6">
+            <div class="w-full md:flex-1 mr-6 mt-16 md:mt-0">
                 <h1 class="text-primary text-3xl font-bold">التواصل مع مستشار علاقات الاستثمار</h1>
                 <p class="text-md text-gray-800 mt-3">يمكنك التواصل مع مدير علاقات الاستثمار من فريقنا للحصول على الدعم
                     والمشورة المناسبين لاحتياجاتك. يمكنك إرسال استفساراتك إلى عنوان البريد الإلكتروني

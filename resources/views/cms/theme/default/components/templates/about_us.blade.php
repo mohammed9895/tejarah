@@ -15,101 +15,46 @@
     <x-partials.title title="{{ $page->title }}"
                       description="{{ $page->data['content'] }}"></x-partials.title>
 
-    <section class="container bg-light-gray rounded-lg sticky top-0 z-30">
-        <div class="flex justify-between flex-col md:flex-row">
-            <a href="#speech-of-his-excellency-the-minister" class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent">
+    <section class="container bg-light-gray/60 backdrop-blur-2xl md:rounded-lg sticky top-0 z-30 overflow-x-scroll navbar">
+        <div class="flex justify-between whitespace-nowrap nav-container">
+            <a href="#speech-of-his-excellency-the-minister" class="flex items-center flex-col py-8 border-b-2 border-transparent  ml-5">
                 <h2 class="text-gray-500 mb-4">01</h2>
                 <h1 class="text-xl font-bold text-gray-700">كلمة معالي الوزير</h1>
             </a>
-            <a href="#vision-and-mission" class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent">
+            <a href="#vision-and-mission" class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
                 <h2 class="text-gray-500 mb-4">02</h2>
                 <h1 class="text-xl font-bold text-gray-700">الرؤية والرسالة</h1>
             </a>
-            <a href="#organizational-chart" class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent">
+            <a href="#organizational-chart" class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
                 <h2 class="text-gray-500 mb-4">03</h2>
                 <h1 class="text-xl font-bold text-gray-700">الهيكل التنظيمي</h1>
             </a>
-            <a href="#general-directorates" class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent">
+            <a href="#general-directorates" class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
                 <h2 class="text-gray-500 mb-4">04</h2>
                 <h1 class="text-xl font-bold text-gray-700">المديريات العامة</h1>
             </a>
-            <a href="#ministry-specialties" class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent">
+            <a href="#ministry-specialties" class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
                 <h2 class="text-gray-500 mb-4">05</h2>
                 <h1 class="text-xl font-bold text-gray-700">أختصاصات الوزارة</h1>
             </a>
-            <a href="#subsidiary-directorates-and-departments" class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent">
+            <a href="#subsidiary-directorates-and-departments" class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
                 <h2 class="text-gray-500 mb-4">06</h2>
                 <h1 class="text-xl font-bold text-gray-700">المديريات والإدارات التابعة</h1>
             </a>
-            <a href="#nazdaher" class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent">
+            <a href="#nazdaher" class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5 pl-5">
                 <h2 class="text-gray-500 mb-4">07</h2>
                 <h1 class="text-xl font-bold text-gray-700">نزدهر</h1>
             </a>
         </div>
     </section>
 
-    <!-- require tailwindcss for example -->
-    <headless-dropdown class="relative inline-block text-left" placement="bottom-end bottom" popper>
-        <div>
-            <button
-                aria-expanded="true"
-                aria-haspopup="true"
-                class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
-                id="menu-button"
-                type="button"
-            >
-                Dropdown
-                <!-- Heroicon name: solid/chevron-down -->
-                <svg aria-hidden="true" class="-mr-1 ml-2 h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
-                     xmlns="http://www.w3.org/2000/svg">
-                    <path clip-rule="evenodd"
-                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                          fill-rule="evenodd" />
-                </svg>
-            </button>
-        </div>
-
-        <div
-            aria-labelledby="menu-button"
-            aria-orientation="vertical"
-            class="origin-top-right absolute w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
-            role="menu"
-            tabindex="-1"
-        >
-            <div class="py-1" role="none">
-                <a class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
-                   href="#account" id="menu-item-0" role="menuitem" tabindex="-1"
-                >Account settings</a
-                >
-                <a class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
-                   href="#support" id="menu-item-1" role="menuitem" tabindex="-1"
-                >Support</a
-                >
-                <a class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
-                   href="#license" id="menu-item-2" role="menuitem" tabindex="-1"
-                >License</a
-                >
-                <form action="#test" method="POST" role="none">
-                    <button
-                        class="text-gray-700 block w-full text-left px-4 py-2 text-sm hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
-                        id="menu-item-3"
-                        role="menuitem"
-                        tabindex="-1"
-                        type="submit"
-                    >
-                        Sign out
-                    </button>
-                </form>
-            </div>
-        </div>
-    </headless-dropdown>
 
     <section id="speech-of-his-excellency-the-minister" class="py-36 container">
-        <div class="flex justify-between items-center">
-            <div class="w-1/3 bg-primary rounded-3xl flex items-center justify-center ml-10">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="w-full md:w-1/3 mx-auto bg-primary rounded-3xl flex items-center justify-center ml-10">
                 <img src="/storage/{{ $page->data['minister_image'] }}" alt="">
             </div>
-            <div class="w-2/3">
+            <div class="w-full mt-10 md:w-2/3">
                 <h1 class="text-3xl font-bold mb-5">{{ $page->data['minister_message_title'] }}</h1>
                 <p class="text-gray-500 leading-loose">{!! $page->data['minister_message_content'] !!}</p>
                 <h3 class="font-bold mt-6">{{ $page->data['minister_name'] }}</h3>
@@ -119,8 +64,8 @@
     </section>
 
     <section id="vision-and-mission" class="container">
-        <div class="flex">
-            <div class="w-1/2">
+        <div class="flex flex-col md:flex-row">
+            <div class="w-full md:w-1/2">
                 <div class="bg-primary rounded-lg p-6">
                     <div class="flex justify-between items-center">
                         <div
@@ -146,7 +91,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex-1 mr-6">
+            <div class="flex-1 mt-10 md:mr-6 ">
                 <h1 class="text-primary text-3xl font-bold mb-5">قيمنا</h1>
                 <div class="grid grid-cols-2 gap-8">
                     @foreach($page->data['values'] as $value)
@@ -183,14 +128,14 @@
             <div class="w-80 h-4 bg-secondary mx-auto -mt-6"></div>
         </div>
         <div class="container">
-            <div class="grid grid-cols-3 gap-4">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
                 @foreach($page->data['specialties'] as $specialization)
-                    <div class="flex items-start">
+                    <div class="flex items-start flex-col md:flex-row">
                         <div
-                            class="bg-primary ml-4 text-secondary w-44 h-44 text-5xl flex items-center justify-center rounded-lg">
+                            class="bg-primary ml-4 text-secondary w-20 h-20 md:w-44 md:h-44 text-2xl mb-2 md:mb-0 md:text-5xl flex items-center justify-center rounded-lg">
                             <i class="fa-solid fa-boxes-stacked"></i>
                         </div>
-                        <div>
+                        <div class="flex-1">
                             <h1 class="text-3xl text-primary font-bold mb-4">{{ $specialization['title'] }}</h1>
                             {!! $specialization['content'] !!}
                         </div>
@@ -209,7 +154,7 @@
             </p>
         </div>
         <div class="container">
-            <div class="grid grid-cols-3 gap-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
                 @foreach($page->data['directorates_and_departments'] as $item)
                     <div class="bg-white shadow-2xl rounded-lg p-5">
                         <div class="border-b border-gray-200 py-8">
@@ -232,11 +177,11 @@
     </section>
 
     <section id="nazdaher" class="py-36 container">
-        <div class="flex justify-between items-center">
-            <div class="w-1/3 bg-primary rounded-3xl flex items-center justify-center ml-10">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="w-full md:w-1/3 mx-auto bg-primary rounded-3xl flex items-center justify-center ml-10">
                 <img src="/storage/{{ $page->data['nazdaher_image'] }}" alt="">
             </div>
-            <div class="w-2/3">
+            <div class="w-full mt-10 md:mt-0 md:w-2/3">
                 <h1 class="text-3xl font-bold mb-5">{{ $page->data['nazdaher_title'] }}</h1>
                 <p class="text-gray-500 leading-loose">{!!  $page->data['nazdaher_content']  !!}</p>
             </div>
@@ -249,7 +194,7 @@
             <div class="w-80 h-4 bg-secondary mx-auto -mt-6"></div>
         </div>
         <div class="container">
-            <div class="grid grid-cols-4 gap-8">
+            <div class="grid grid-cols-2fmldkjhdjhgd kljsjks kfj jd okmdpo ,dl; l;dms pos lkjflkjfklfjklfj md:grid-cols-4 gap-8">
                 @foreach($page->data['team'] as $member)
                     <div>
                         <div class="bg-secondary rounded-lg">

@@ -1,7 +1,7 @@
 <div>
     <div class="container">
-        <div class="flex">
-            <div class="flex-1 ml-10">
+        <div class="flex flex-col md:flex-row">
+            <div class="w-full md:flex-1 mb-16 md:mb-0 ml-10">
                 <div class="bg-[#f6f8fa] rounded-2xl p-6">
                     <div class="relative">
                         <h1 class="text-primary text-2xl font-bold mb-7">البحث في التشريعات</h1>
@@ -46,7 +46,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-2/3">
+            <div class="w-full md:w-2/3">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     @foreach($legislations as $legislation)
                         <a class="shadow-lg rounded-2xl p-4 inline-block" wire:key="{{ $loop->index }}" href="#">

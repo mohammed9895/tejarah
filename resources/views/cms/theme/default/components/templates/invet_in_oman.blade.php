@@ -16,26 +16,26 @@
                       description="{{ $page->data['content'] }}"></x-partials.title>
 
 
-    <section class="container bg-light-gray rounded-lg">
-        <div class="flex justify-between">
+    <section class="container bg-light-gray/60 backdrop-blur-2xl md:rounded-lg sticky top-0 z-30 overflow-x-scroll navbar">
+        <div class="flex justify-between whitespace-nowrap nav-container">
             <a href="#mechanism-of-action"
-               class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent">
+               class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
                 <h2 class="text-gray-500 mb-4">01</h2>
                 <h1 class="text-xl font-bold text-gray-700">آلية العمل</h1>
             </a>
             <a href="#commercial-activities"
-               class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent">
+               class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
                 <h2 class="text-gray-500 mb-4">02</h2>
                 <h1 class="text-xl font-bold text-gray-700">الأنشطة التجارية</h1>
             </a>
             <a href="#establishing-a-business"
-               class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent">
+               class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
                 <h2 class="text-gray-500 mb-4">03</h2>
                 <h1 class="text-xl font-bold text-gray-700">تأسيس الأعمال</h1>
             </a>
             <a href="#export_support"
-               class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent">
-                <h2 class="text-gray-500 mb-4">03</h2>
+               class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
+                <h2 class="text-gray-500 mb-4">04</h2>
                 <h1 class="text-xl font-bold text-gray-700">دعم الصادرات</h1>
             </a>
         </div>
@@ -49,35 +49,35 @@
             <p>{{ $page->data['steps_main_description'] }}</p>
         </div>
 
-        <div class="flex justify-between items-start">
+        <div class="flex justify-between items-center md:items-start flex-col md:flex-row">
             <div class="flex flex-col justify-center items-center space-y-5 flex-1">
                 <div class="w-32 h-32 bg-primary rounded-2xl text-white text-6xl flex items-center justify-center">
                     <i class="fa-solid fa-user-tie"></i>
                 </div>
                 <h1 class="text-lg text-gray-500 text-center">{{ $page->data['step_1_title'] }}</h1>
             </div>
-            <div><img src="{{ asset('image/after.svg') }}" class="mt-12" alt=""></div>
+            <div class=""><img src="{{ asset('image/after.svg') }}" class="mt-12 -rotate-90 md:rotate-0 mb-10 md:mb-0" alt=""></div>
             <div class="flex flex-col justify-center items-center space-y-5 flex-1">
                 <div class="w-32 h-32 bg-primary rounded-2xl text-white text-6xl flex items-center justify-center">
                     <i class="fa-regular fa-comment"></i>
                 </div>
                 <h1 class="text-lg text-gray-500 text-center">{{ $page->data['step_2_title'] }}</h1>
             </div>
-            <div><img src="{{ asset('image/after.svg') }}" class="mt-12" alt=""></div>
+            <div><img src="{{ asset('image/after.svg') }}" class="mt-12 -rotate-90 md:rotate-0 mb-10 md:mb-0" alt=""></div>
             <div class="flex flex-col justify-center items-center space-y-5 flex-1">
                 <div class="w-32 h-32 bg-primary rounded-2xl text-white text-6xl flex items-center justify-center">
                     <i class="fa-regular fa-eye-slash"></i>
                 </div>
                 <h1 class="text-lg text-gray-500 text-center">{{ $page->data['step_3_title'] }}</h1>
             </div>
-            <div><img src="{{ asset('image/after.svg') }}" class="mt-12" alt=""></div>
+            <div><img src="{{ asset('image/after.svg') }}" class="mt-12 -rotate-90 md:rotate-0 mb-10 md:mb-0" alt=""></div>
             <div class="flex flex-col justify-center items-center space-y-5 flex-1">
                 <div class="w-32 h-32 bg-primary rounded-2xl text-white text-6xl flex items-center justify-center">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
                 <h1 class="text-lg text-gray-500 text-center">{{ $page->data['step_4_title'] }}</h1>
             </div>
-            <div><img src="{{ asset('image/after.svg') }}" class="mt-12" alt=""></div>
+            <div><img src="{{ asset('image/after.svg') }}" class="mt-12 -rotate-90 md:rotate-0 mb-10 md:mb-0" alt=""></div>
             <div class="flex flex-col justify-center items-center space-y-5 flex-1">
                 <div class="w-32 h-32 bg-primary rounded-2xl text-white text-6xl flex items-center justify-center">
                     <i class="fa-solid fa-box-open"></i>
@@ -95,7 +95,7 @@
             <p>{{ $page->data['commercial_activities_main_description'] }}</p>
         </div>
 
-        <div class="grid grid-cols-4 gap-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
             @foreach($page->data['activities'] as $activity)
                 <div class="flex flex-col items-start">
                     <div class="flex items-center w-16 h-16 justify-center bg-primary rounded-lg text-white text-2xl">
@@ -110,8 +110,8 @@
 
 
     <section id="establishing-a-business" class="py-36 container">
-        <div class="flex items-center">
-            <div class="w-1/3">
+        <div class="flex items-center flex-col md:flex-row">
+            <div class="w-full mb-16 md:mb-0 md:w-1/3">
                 <div
                     class="bg-secondary relative rounded-2xl py-5 flex items-center justify-center border-2 border-dashed border-primary">
                     <img src="/storage/{{ $page->data['establishing_a_business_image'] }}" class="w-[90%]" alt="">
@@ -131,7 +131,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex-1 mr-6">
+            <div class="w-full md:flex-1 mr-6">
                 <div class="relative text-gray-800 text-center mb-10">
                     <h1 class="text-3xl font-bold mb-5">{{ $page->data['establishing_a_business_title']  }}</h1>
                     <div class="w-80 h-4 bg-secondary mx-auto -mt-6"></div>
@@ -176,14 +176,14 @@
     </section>
 
     <section class="py-36 container" id="support_exports">
-        <div class="flex items-center">
-            <div class="w-1/3">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="w-full md:w-1/3">
                 <div
                     class="bg-secondary relative rounded-2xl py-5 flex items-center justify-center border-2 border-primary">
                     <img src="/storage/{{ $page->data['here_for_help_main_image'] }}" class="w-[90%]" alt="">
                 </div>
             </div>
-            <div class="flex-1 mr-6">
+            <div class="w-full md:flex-1 mr-6 mt-16 md:mt-0">
                 <div class="relative text-gray-800 text-right mb-10">
                     <h1 class="text-3xl font-bold mb-5">{{ $page->data['here_for_help_main_title'] }}</h1>
                     <div class="w-56 h-4 bg-secondary -mt-10"></div>
@@ -206,14 +206,14 @@
     </section>
 
     <section class="py-36 container" id="support_external">
-        <div class="flex items-center">
-            <div class="w-1/3">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="w-full md:w-1/3">
                 <div
                     class="bg-secondary relative rounded-2xl py-5 flex items-center justify-center border-2 border-dashed border-primary">
                     <img src="/storage/{{ $page->data['invest_in_oman_main_image'] }}" class="w-[90%]" alt="">
                 </div>
             </div>
-            <div class="flex-1 mr-6">
+            <div class="w-full md:flex-1 mr-6 mt-16 md:mt-0">
                 <div class="relative text-gray-800 text-right mb-10">
                     <h1 class="text-3xl font-bold mb-5">{{ $page->data['invest_in_oman_main_title'] }}</h1>
                     <div class="w-56 h-4 bg-secondary -mt-10"></div>
@@ -274,12 +274,12 @@
     </section>
 
     <section class="py-36">
-        <div class="container bg-secondary rounded-3xl flex items-center justify-between p-10">
-            <div class="w-1/3 relative">
+        <div class="container bg-secondary rounded-3xl flex flex-col md:flex-row items-center justify-between p-10">
+            <div class="w-full md:w-1/3 relative">
                 <img src="{{ asset('image/contact.svg') }}" class="rounded" alt="">
                 <img src="{{ asset('image/arrow.svg') }}" class="absolute -top-10 -right-10 w-36" alt="">
             </div>
-            <div class="flex-1 mr-6">
+            <div class="w-full md:flex-1 mr-6 mt-16 md:mt-0">
                 <h1 class="text-primary text-3xl font-bold">التواصل مع مستشار علاقات الاستثمار</h1>
                 <p class="text-md text-gray-800 mt-3">يمكنك التواصل مع مدير علاقات الاستثمار من فريقنا للحصول على الدعم
                     والمشورة المناسبين لاحتياجاتك. يمكنك إرسال استفساراتك إلى عنوان البريد الإلكتروني

@@ -3,7 +3,32 @@
 @endphp
 <nav class="" >
 
-        <nav class="bg-white border-gray-200 dark:bg-gray-900 mb-10">
+
+
+    <!-- Target element -->
+    <div id="targetEl" class="hidden">
+        <ul
+            class="w-48 rounded-lg  border border-gray-200 bg-white text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white"
+        >
+            <li
+                class="w-full rounded-t-lg border-b border-gray-200 px-4 py-2 dark:border-gray-600"
+            >
+                Profile
+            </li>
+            <li
+                class="w-full border-b border-gray-200 px-4 py-2 dark:border-gray-600"
+            >
+                Settings
+            </li>
+            <li
+                class="w-full border-b border-gray-200 px-4 py-2 dark:border-gray-600"
+            >
+                Messages
+            </li>
+            <li class="w-full rounded-b-lg px-4 py-2">Download</li>
+        </ul>
+    </div>
+        <nav class="bg-white border-gray-200 dark:bg-gray-900 mb-10" id="nav-bar">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="{{ asset('image/logo.svg') }}" class="h-12" alt="">
