@@ -167,13 +167,13 @@
         </div>
     </section>
 
-    <section id="export_support" class="py-16 container">
-        <div class="relative text-gray-800 text-center mb-10">
-            <h1 class="text-3xl font-bold mb-5">{{ $page->data['export_support_title'] }}</h1>
-            <div class="w-80 h-4 bg-secondary mx-auto -mt-6"></div>
-            <p>{{ $page->data['export_support_description'] }}</p>
-        </div>
-    </section>
+{{--    <section id="export_support" class="py-16 container">--}}
+{{--        <div class="relative text-gray-800 text-center mb-10">--}}
+{{--            <h1 class="text-3xl font-bold mb-5">{{ $page->data['export_support_title'] }}</h1>--}}
+{{--            <div class="w-80 h-4 bg-secondary mx-auto -mt-6"></div>--}}
+{{--            <p>{{ $page->data['export_support_description'] }}</p>--}}
+{{--        </div>--}}
+{{--    </section>--}}
 
     <section class="py-36 container" id="support_exports">
         <div class="flex flex-col md:flex-row items-center">

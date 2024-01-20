@@ -22,10 +22,9 @@
             <a href="/"><img src="{{ asset('image/logo.svg') }}" alt=""></a>
             <p class="text-gray-600 mt-3">وزارة التجارة والصناعة وترويج الاستثمار, PO Box 550, مسقط 100,سلطنة عمان</p>
             <div class="flex space-x-3 space-x-reverse mt-3">
-                <a href="#" class="inline-block rounded text-primary bg-secondary w-8 h-8 text-center leading-loose"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#" class="inline-block rounded text-primary bg-secondary w-8 h-8 text-center leading-loose"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#" class="inline-block rounded text-primary bg-secondary w-8 h-8 text-center leading-loose"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#" class="inline-block rounded text-primary bg-secondary w-8 h-8 text-center leading-loose"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://twitter.com/tejarah_om" class="inline-block rounded text-primary bg-secondary w-8 h-8 text-center leading-loose"><i class="fa-brands fa-x"></i></a>
+                <a href="https://www.youtube.com/channel/UCXd3XBW70tAfqPvnZs2a-Yw" class="inline-block rounded text-primary bg-secondary w-8 h-8 text-center leading-loose"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/tejarah_om/" class="inline-block rounded text-primary bg-secondary w-8 h-8 text-center leading-loose"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </div>
         <div class="">
@@ -34,13 +33,10 @@
                     <h1 class="mb-5 text-lg font-bold text-primary">من نحن</h1>
                     <ul class="space-y-3">
                         <li class="text-gray-600">
-                            <a href="#">المديريات العام</a>
+                            <a href="#">المديريات العامة</a>
                         </li>
                         <li class="text-gray-600">
                             <a href="#">المديريات والإدارات التابعة</a>
-                        </li>
-                        <li class="text-gray-600">
-                            <a href="#">نزدهر</a>
                         </li>
                     </ul>
                 </div>
@@ -96,7 +92,7 @@
         <div class="py-6 items-center border-t border-gray-300 mt-6">
             <div class="flex justify-between">
                 <div>
-                    <p class="text-gray-600">جميع الحقوق محفوظة لصالح وزارة التجارة وترويج الأستثمار</p>
+                    <p class="text-gray-600">جميع الحقوق محفوظة لصالح وزارة التجارة والصناعة وترويج الاستثمار</p>
                 </div>
                 <div class="flex space-x-3 space-x-reverse">
                     <a href="#">الشروط والأحكام</a>

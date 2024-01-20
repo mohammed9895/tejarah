@@ -48,10 +48,10 @@
                             <a href="/about-us" wire:navigateclass="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">من نحن</a>
                         </li>
                         <li>
-                            <a href="/invest-in-oman-page" wire:navigateclass="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">استثمر في عمان</a>
+                            <a href="/invest-in-oman-page" wire:navigateclass="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">استثمر في عُمان</a>
                         </li>
                         <li>
-                            <a href="/whyoman" wire:navigateclass="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">لماذا سلطنة عمان</a>
+                            <a href="/whyoman" wire:navigateclass="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">لماذا سلطنة عُمان</a>
                         </li>
                         <li>
                             <a href="/legislation" wire:navigateclass="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">التشريعات</a>
@@ -60,7 +60,7 @@
                             <a href="/blogs" wire:navigateclass="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">المركز الأعلامي</a>
                         </li>
                         <li>
-                            <a href="#" class="bg-primary text-white rounded-full px-4 py-2">اتصل بنا</a>
+                            <a href="#" class="bg-primary text-white rounded-full px-4 py-2">توصل معنا</a>
                         </li>
                     </ul>
                 </div>
