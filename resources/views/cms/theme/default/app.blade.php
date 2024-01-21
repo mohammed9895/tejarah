@@ -6,7 +6,7 @@
     $theme = FilamentCms::getCurrentTheme();
 @endphp
     <!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}" class="scroll-smooth">
+<html lang="{{ app()->getLocale() }}" dir="{{ app()->getLocale() == 'en' ? 'lrt' : 'rtl' }}" class="scroll-smooth">
 <head>
     @if ($seo)
         {!! seo($seo) !!}
@@ -23,7 +23,7 @@
     @vite('resources/css/app.css')
 </head>
 
-<body class="" dir="rtl">
+<body>
         @section('header')
             @include("cms.theme.{$theme}.header")
         @show

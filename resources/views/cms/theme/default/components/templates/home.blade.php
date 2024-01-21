@@ -13,6 +13,7 @@
     component="filament-cms::{{$theme}}.page"
     :layout="$layout">
 
+    @dd(session()->all())
     <style>
         .slider-container input[type=radio] {
             display: none;
@@ -191,7 +192,7 @@
     </style>
 
     <div class="container">
-        <section class="container flex items-center bg-light-gray rounded-2xl p-10 md:py-20 overflow-hidden md:overflow-visible">
+        <section class="container flex items-center bg-light-gray rounded-2xl p-10 md:py-28 overflow-hidden md:overflow-visible">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-8">
                 <div class="info order-2 md:order-1">
                     <div id="info-1" class="">

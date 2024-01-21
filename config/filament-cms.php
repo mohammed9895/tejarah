@@ -12,7 +12,7 @@ return [
 
     'default_layout' => 'app',
 
-    'locales' => [],
+    'locales' => ['ar', 'en'],
 
     /*
     |--------------------------------------------------------------------------
@@ -24,6 +24,7 @@ return [
     */
     'middleware' => [
         'web' => [
+             \App\Http\Middleware\SetLocale::class,
         ],
     ],
 
