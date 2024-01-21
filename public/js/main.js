@@ -1,39 +1,13 @@
-// Function to highlight the active link based on the current section
-import { Collapse } from 'flowbite';
+const hamburger_menu = document.getElementById('hamburger-menu');
 
-// set the target element that will be collapsed or expanded (eg. navbar menu)
-const $targetEl = document.getElementById('targetEl');
 
-// optionally set a trigger element (eg. a button, hamburger icon)
-const $triggerEl = document.getElementById('triggerEl');
-
-// optional options with default values and callback functions
-const options = {
-    onCollapse: () => {
-        console.log('element has been collapsed');
-    },
-    onExpand: () => {
-        console.log('element has been expanded');
-    },
-    onToggle: () => {
-        console.log('element has been toggled');
-    },
-};
-
-const instanceOptions = {
-    id: 'targetEl',
-    override: true
-};
-
-/*
- * $targetEl: required
- * $triggerEl: optional
- * options: optional
- */
-const collapse = new Collapse($targetEl, $triggerEl, options, instanceOptions);
-
-$triggerEl.addEventListener('click', function () {
-    collapse.toggle();
+hamburger_menu.addEventListener('click', function () {
+    if (document.getElementById('navbar-default').classList.contains('hidden')) {
+        document.getElementById('navbar-default').classList.remove('hidden');
+    }
+    else {
+        document.getElementById('navbar-default').classList.add('hidden');
+    }
 })
 
 function highlightActiveLink(entries) {
@@ -83,5 +57,4 @@ item3.addEventListener('click', function () {
     info2.classList.add('hidden')
 });
 
-require('vanilla-headless')
 

@@ -227,7 +227,7 @@
                     <div class="flex items-center mt-6 space-x-5 rtl:space-x-reverse">
                         <a href="#"><img src="{{ asset('image/InvestOmanv1_1.svg') }}" alt=""></a>
                         <a href="#"><img src="{{ asset('image/OBF.svg') }}" alt=""></a>
-                        <a href="#"><img src="{{ asset('image/investeasy.svg') }}" alt=""></a>
+                        <a href="#"><img src="{{ asset('image/investeasy.svg') }}" width="150" alt=""></a>
                     </div>
                 </div>
                 <div class="slider-container order-1 md:order-2">
