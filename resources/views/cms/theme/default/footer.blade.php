@@ -7,11 +7,14 @@
         after:content-[''] after:w-full md:after:w-1/2 after:absolute after:top-1/2 md:after:right-0 after:bottom-0 after:left-1/2 after:transform after:-translate-x-1/2 after:-translate-y-1/2 after:bg-primary md:after:rotate-[-2deg] after:rounded-3xl
          after:-z-10">
         <div>
-            <h1 class="text-center text-white font-bold text-4xl">أشترك في القائمة البريدية  <br>
-                ليصلك جديد الأخبار والفعاليات</h1>
+            <h1 class="text-center text-white font-bold text-4xl">
+               {{__('global.join-maillist')}}
+                <br>
+                {{__('global.to-recive-news')}}
+            </h1>
             <div class="mt-6 relative">
                 <input type="text" placeholder="البريد الإلكتروني" class="placeholder-gray-500 w-full p-5 rounded-lg">
-                <button class="absolute left-2 top-2 bg-primary rounded-lg text-white py-3 px-6">أشترك<i class="fa-regular fa-paper-plane"></i></button>
+                <button class="absolute left-2 top-2 bg-primary rounded-lg text-white py-3 px-6">{{__('global.subscribe')}}<i class="fa-regular fa-paper-plane"></i></button>
             </div>
         </div>
     </div>
@@ -20,7 +23,9 @@
     <div class="container flex justify-between items- flex-col md:flex-row space-y-5">
         <div class="w-1/3">
             <a href="/"><img src="{{ asset('image/logo.svg') }}" alt=""></a>
-            <p class="text-gray-600 mt-3">وزارة التجارة والصناعة وترويج الاستثمار, PO Box 550, مسقط 100,سلطنة عمان</p>
+            <p class="text-gray-600 mt-3">
+               {{__('global.address-full-tejarah')}}
+            </p>
             <div class="flex space-x-3 space-x-reverse mt-3">
                 <a href="https://twitter.com/tejarah_om" class="inline-block rounded text-primary bg-secondary w-8 h-8 text-center leading-loose"><i class="fa-brands fa-x"></i></a>
                 <a href="https://www.youtube.com/channel/UCXd3XBW70tAfqPvnZs2a-Yw" class="inline-block rounded text-primary bg-secondary w-8 h-8 text-center leading-loose"><i class="fa-brands fa-youtube"></i></a>
@@ -30,49 +35,49 @@
         <div class="">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-10">
                 <div class="flex flex-col">
-                    <h1 class="mb-5 text-lg font-bold text-primary">من نحن</h1>
+                    <h1 class="mb-5 text-lg font-bold text-primary">{{__('global.menu.about-us')}} </h1>
                     <ul class="space-y-3">
                         <li class="text-gray-600">
-                            <a href="#">المديريات العامة</a>
+                            <a href="#">{{ __('messages.general_directorates') }}</a>
                         </li>
                         <li class="text-gray-600">
-                            <a href="#">المديريات والإدارات التابعة</a>
+                            <a href="#">{{ __('messages.affiliated_directorates_and_departments') }}</a>
+                        </li>
+                    </ul>                    
+                </div><div class="flex flex-col">
+                    <h1 class="mb-5 text-lg font-bold text-primary">{{ __('messages.services') }}</h1>
+                    <ul class="space-y-3">
+                        <li class="text-gray-600">
+                            <a href="#">{{ __('messages.investment_incentives_guide') }}</a>
+                        </li>
+                        <li class="text-gray-600">
+                            <a href="#">{{ __('messages.services_guide') }}</a>
+                        </li>
+                        <li class="text-gray-600">
+                            <a href="#">{{ __('messages.nizdahr') }}</a>
                         </li>
                     </ul>
                 </div>
                 <div class="flex flex-col">
-                    <h1 class="mb-5 text-lg font-bold text-primary">خدماتنا</h1>
+                    <h1 class="mb-5 text-lg font-bold text-primary">{{ __('messages.important_links') }}</h1>
                     <ul class="space-y-3">
                         <li class="text-gray-600">
-                            <a href="#">دليل الحوافز الاستثمارية</a>
+                            <a href="#">{{ __('messages.news') }}</a>
                         </li>
                         <li class="text-gray-600">
-                            <a href="#">الدليل الاسترشادي لخدماتنا</a>
+                            <a href="#">{{ __('messages.information_bank') }}</a>
                         </li>
                         <li class="text-gray-600">
-                            <a href="#">نزدهر</a>
+                            <a href="#">{{ __('messages.frequent_questions') }}</a>
+                        </li>
+                        <li class="text-gray-600">
+                            <a href="#">{{ __('messages.archive') }}</a>
                         </li>
                     </ul>
                 </div>
+                
                 <div class="flex flex-col">
-                    <h1 class="mb-5 text-lg font-bold text-primary">روابط مهمه</h1>
-                    <ul class="space-y-3">
-                        <li class="text-gray-600">
-                            <a href="#">الاخبار</a>
-                        </li>
-                        <li class="text-gray-600">
-                            <a href="#">بنك المعلومات</a>
-                        </li>
-                        <li class="text-gray-600">
-                            <a href="#">الأسئلة الشاعة</a>
-                        </li>
-                        <li class="text-gray-600">
-                            <a href="#">الارشيف</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="flex flex-col">
-                    <h1 class="mb-5 text-lg font-bold text-primary">أتصل بنا</h1>
+                    <h1 class="mb-5 text-lg font-bold text-primary">{{__('global.menu.contact-us')}}</h1>
                     <ul class="space-y-3">
                         <li class="text-gray-600">
                             <a href="#">+968 80000070</a>
@@ -92,13 +97,13 @@
         <div class="py-6 items-center border-t border-gray-300 mt-6">
             <div class="flex justify-between">
                 <div>
-                    <p class="text-gray-600">جميع الحقوق محفوظة لصالح وزارة التجارة والصناعة وترويج الاستثمار</p>
+                    <p class="text-gray-600">{{ __('messages.all_rights_reserved') }}</p>
                 </div>
                 <div class="flex space-x-3 space-x-reverse">
-                    <a href="#">الشروط والأحكام</a>
-                    <a href="#">سياسة الخصوصية</a>
+                    <a href="#">{{ __('messages.terms_and_conditions') }}</a>
+                    <a href="#">{{ __('messages.privacy_policy') }}</a>
                 </div>
-            </div>
+            </div>            
         </div>
     </div>
 </footer>

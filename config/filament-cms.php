@@ -24,7 +24,13 @@ return [
     */
     'middleware' => [
         'web' => [
-             \App\Http\Middleware\SetLocale::class,
+            \App\Http\Middleware\EncryptCookies::class,
+            \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
+            \Illuminate\Session\Middleware\StartSession::class,
+            \Illuminate\View\Middleware\ShareErrorsFromSession::class,
+            \App\Http\Middleware\VerifyCsrfToken::class,
+            \Illuminate\Routing\Middleware\SubstituteBindings::class,
+            \App\Http\Middleware\SetLocale::class,
         ],
     ],
 
@@ -92,7 +98,7 @@ return [
 
     'models' => [
         'cms_page' => \App\Models\CmsPage::class,
-        'cms_published_page' => Models\CmsPublishedPage::class,
+        'cms_published_page' => \App\Models\CmsPublishedPage::class,
         'cms_page_navigation' => Models\CmsPageNavigation::class,
         'cms_page_navigation_category' => Models\CmsPageNavigationCategory::class,
         'cms_tag' => Models\CmsTag::class,

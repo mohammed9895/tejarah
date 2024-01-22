@@ -15,31 +15,27 @@
     <x-partials.title title="{{ $page->title }}"
                       description="{{ $page->data['content'] }}"></x-partials.title>
 
-
-    <section class="container bg-light-gray/60 backdrop-blur-2xl md:rounded-lg sticky top-0 z-30 overflow-x-scroll navbar">
-        <div class="flex justify-between whitespace-nowrap nav-container">
-            <a href="#mechanism-of-action"
-               class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
-                <h2 class="text-gray-500 mb-4">01</h2>
-                <h1 class="text-xl font-bold text-gray-700">آلية العمل</h1>
-            </a>
-            <a href="#commercial-activities"
-               class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
-                <h2 class="text-gray-500 mb-4">02</h2>
-                <h1 class="text-xl font-bold text-gray-700">الأنشطة التجارية</h1>
-            </a>
-            <a href="#establishing-a-business"
-               class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
-                <h2 class="text-gray-500 mb-4">03</h2>
-                <h1 class="text-xl font-bold text-gray-700">تأسيس الأعمال</h1>
-            </a>
-            <a href="#export_support"
-               class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
-                <h2 class="text-gray-500 mb-4">04</h2>
-                <h1 class="text-xl font-bold text-gray-700">دعم الصادرات</h1>
-            </a>
-        </div>
-    </section>
+                      <section class="container bg-light-gray/60 backdrop-blur-2xl md:rounded-lg sticky top-0 z-30 overflow-x-scroll navbar">
+                        <div class="flex justify-between whitespace-nowrap nav-container">
+                            <a href="#mechanism-of-action" class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
+                                <h2 class="text-gray-500 mb-4">01</h2>
+                                <h1 class="text-xl font-bold text-gray-700">{{ __('messages.mechanism_of_action') }}</h1>
+                            </a>
+                            <a href="#commercial-activities" class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
+                                <h2 class="text-gray-500 mb-4">02</h2>
+                                <h1 class="text-xl font-bold text-gray-700">{{ __('messages.commercial_activities') }}</h1>
+                            </a>
+                            <a href="#establishing-a-business" class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
+                                <h2 class="text-gray-500 mb-4">03</h2>
+                                <h1 class="text-xl font-bold text-gray-700">{{ __('messages.establishing_a_business') }}</h1>
+                            </a>
+                            <a href="#export_support" class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
+                                <h2 class="text-gray-500 mb-4">04</h2>
+                                <h1 class="text-xl font-bold text-gray-700">{{ __('messages.export_support') }}</h1>
+                            </a>
+                        </div>
+                    </section>
+                    
 
 
     <section class="py-36 container" id="mechanism-of-action">
