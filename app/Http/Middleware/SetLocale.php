@@ -17,10 +17,14 @@ class SetLocale
      */
     public function handle(Request $request, Closure $next): Response
     {
-        $locale = session()->get('locale2');
+        $locale = session()->get('locale');
         app()->setLocale($locale);
+       /*  if (!$request->has('preview')) {
+            // Redirect to the same URL with the 'preview' query parameter
+            return redirect($request->fullUrlWithQuery(['preview' => '']));
+        } */
 
-        // return dd($locale);
+         //return dd($locale);
         return $next($request);
     }
 }

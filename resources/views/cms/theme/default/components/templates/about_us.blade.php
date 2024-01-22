@@ -14,39 +14,38 @@
 
     <x-partials.title title="{{ $page->title }}"
                       description="{{ $page->data['content'] }}"></x-partials.title>
-
-    <section class="container bg-light-gray/60 backdrop-blur-2xl md:rounded-lg sticky top-0 z-30 overflow-x-scroll navbar">
-        <div class="flex justify-between whitespace-nowrap nav-container">
-            <a href="#speech-of-his-excellency-the-minister" class="flex items-center flex-col py-8 border-b-2 border-transparent  ml-5">
-                <h2 class="text-gray-500 mb-4">01</h2>
-                <h1 class="text-xl font-bold text-gray-700">كلمة معالي الوزير</h1>
-            </a>
-            <a href="#vision-and-mission" class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
-                <h2 class="text-gray-500 mb-4">02</h2>
-                <h1 class="text-xl font-bold text-gray-700">الرؤية والرسالة</h1>
-            </a>
-            <a href="#organizational-chart" class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
-                <h2 class="text-gray-500 mb-4">03</h2>
-                <h1 class="text-xl font-bold text-gray-700">الهيكل التنظيمي</h1>
-            </a>
-            <a href="#general-directorates" class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
-                <h2 class="text-gray-500 mb-4">04</h2>
-                <h1 class="text-xl font-bold text-gray-700">المديريات العامة</h1>
-            </a>
-            <a href="#ministry-specialties" class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
-                <h2 class="text-gray-500 mb-4">05</h2>
-                <h1 class="text-xl font-bold text-gray-700">أختصاصات الوزارة</h1>
-            </a>
-            <a href="#subsidiary-directorates-and-departments" class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
-                <h2 class="text-gray-500 mb-4">06</h2>
-                <h1 class="text-xl font-bold text-gray-700">المديريات والإدارات التابعة</h1>
-            </a>
-            <a href="#nazdaher" class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5 pl-5">
-                <h2 class="text-gray-500 mb-4">07</h2>
-                <h1 class="text-xl font-bold text-gray-700">نزدهر</h1>
-            </a>
-        </div>
-    </section>
+                      <section class="container bg-light-gray/60 backdrop-blur-2xl md:rounded-lg sticky top-0 z-30 overflow-x-scroll navbar">
+                        <div class="flex justify-between whitespace-nowrap nav-container">
+                            <a href="#speech-of-his-excellency-the-minister" class="flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
+                                <h2 class="text-gray-500 mb-4">01</h2>
+                                <h1 class="text-xl font-bold text-gray-700">{{ __('messages.speech_of_the_minister') }}</h1>
+                            </a>
+                            <a href="#vision-and-mission" class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
+                                <h2 class="text-gray-500 mb-4">02</h2>
+                                <h1 class="text-xl font-bold text-gray-700">{{ __('messages.vision_and_mission') }}</h1>
+                            </a>
+                            <a href="#organizational-chart" class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
+                                <h2 class="text-gray-500 mb-4">03</h2>
+                                <h1 class="text-xl font-bold text-gray-700">{{ __('messages.organizational_chart') }}</h1>
+                            </a>
+                            <a href="#general-directorates" class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
+                                <h2 class="text-gray-500 mb-4">04</h2>
+                                <h1 class="text-xl font-bold text-gray-700">{{ __('messages.general_directorates') }}</h1>
+                            </a>
+                            <a href="#ministry-specialties" class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
+                                <h2 class="text-gray-500 mb-4">05</h2>
+                                <h1 class="text-xl font-bold text-gray-700">{{ __('messages.ministry_specialties') }}</h1>
+                            </a>
+                            <a href="#subsidiary-directorates-and-departments" class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
+                                <h2 class="text-gray-500 mb-4">06</h2>
+                                <h1 class="text-xl font-bold text-gray-700">{{ __('messages.subsidiary_directorates_and_departments') }}</h1>
+                            </a>
+                            <a href="#nazdaher" class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5 pl-5">
+                                <h2 class="text-gray-500 mb-4">07</h2>
+                                <h1 class="text-xl font-bold text-gray-700">{{ __('messages.nazdaher') }}</h1>
+                            </a>
+                        </div>
+                    </section>
 
 
     <section id="speech-of-his-excellency-the-minister" class="py-36 container">
@@ -92,7 +91,7 @@
                 </div>
             </div>
             <div class="flex-1 mt-10 md:mr-6 ">
-                <h1 class="text-primary text-3xl font-bold mb-5">قيمنا</h1>
+                <h1 class="text-primary text-3xl font-bold mb-5"> {{__('messages.values')}} </h1>
                 <div class="grid grid-cols-2 gap-8">
                     @foreach($page->data['values'] as $value)
                         <div class="flex items-center">

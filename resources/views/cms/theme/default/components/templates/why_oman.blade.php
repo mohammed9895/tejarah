@@ -14,28 +14,36 @@
 
     <x-partials.title title="{{ $page->title }}"
                       description="{{ $page->data['content'] }}"></x-partials.title>
-
+                      
     <section class="container bg-light-gray/60 backdrop-blur-2xl md:rounded-lg sticky top-0 z-30 overflow-x-scroll navbar">
         <div class="flex justify-between whitespace-nowrap nav-container">
             <a href="#2024_vision"
                class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
                 <h2 class="text-gray-500 mb-4">01</h2>
-                <h1 class="text-xl font-bold text-gray-700">رؤية عُمان 2040</h1>
+                <h1 class="text-xl font-bold text-gray-700"> 
+                    {{ __('global.oman2040vision') }}
+                </h1>
             </a>
             <a href="#featurs" -
                class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
                 <h2 class="text-gray-500 mb-4">02</h2>
-                <h1 class="text-xl font-bold text-gray-700">المزايا التنافسية في سلطنة عُمان</h1>
+                <h1 class="text-xl font-bold text-gray-700">  
+                    {{ __('global.advantage-oman') }}
+                </h1>
             </a>
             <a href="#success-framework"
                class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
                 <h2 class="text-gray-500 mb-4">03</h2>
-                <h1 class="text-xl font-bold text-gray-700">إطار النجاح</h1>
+                <h1 class="text-xl font-bold text-gray-700">  
+                    {{ __('global.framework-for-success') }}
+                </h1>
             </a>
             <a href="#investor-residency-program"
                class="inline-block flex items-center flex-col py-8 border-b-2 border-transparent ml-10 pl-6">
                 <h2 class="text-gray-500 mb-4">04</h2>
-                <h1 class="text-xl font-bold text-gray-700">برنامج إقامة مستثمر</h1>
+                <h1 class="text-xl font-bold text-gray-700">  
+                    {{ __('global.investor-residency-program') }}
+                </h1>
             </a>
         </div>
     </section>
@@ -907,8 +915,12 @@
         <a href="{{ $page->data['investor_residency_program_link'] }}"
            class="flex  items-center justify-between space-y-4 bg-gradient-to-tr from-[#E35656] to-[#9B2E2E] rounded-lg mt-11 p-6">
             <div>
-                <h1 class="text-white text-2xl">الاطِّلاع على مزيد من المعلومات</h1>
-                <h1 class="text-white text-2xl">حول برنامج إقامة مستثمر</h1>
+                <h1 class="text-white text-2xl"> 
+                    {{ __('global.get-more-info') }}
+                </h1>
+                <h1 class="text-white text-2xl">
+                    {{ __('global.about-investor-residency') }}
+                </h1>
             </div>
             <div>
                 <img src="{{ asset('image/arow-left.svg') }}" alt="">
@@ -916,104 +928,8 @@
         </a>
 
     </section>
-
     <section class="py-36">
-        <div class="container bg-secondary rounded-3xl flex flex-col md:flex-row items-center justify-between p-10">
-            <div class="w-full md:w-1/3 relative">
-                <img src="{{ asset('image/contact.svg') }}" class="rounded" alt="">
-                <img src="{{ asset('image/arrow.svg') }}" class="absolute -top-10 -right-10 w-36" alt="">
-            </div>
-            <div class="w-full md:flex-1 mr-6 mt-16 md:mt-0">
-                <h1 class="text-primary text-3xl font-bold">التواصل مع مستشار علاقات الاستثمار</h1>
-                <p class="text-md text-gray-800 mt-3">يمكنك التواصل مع مدير علاقات الاستثمار من فريقنا للحصول على الدعم
-                    والمشورة المناسبين لاحتياجاتك. يمكنك إرسال استفساراتك إلى عنوان البريد الإلكتروني
-                    invest@tejarah.gov.om أو ملء استمارة التواصل أدناه وسيتم التواصل معك.</p>
-                <form action="">
-                    <div class="flex mt-5">
-                        <button class="p-3 text-xl text-white bg-primary rounded-lg">
-                            <i class="fa-solid fa-money-bill-wave"></i>
-                            أستثمار
-                        </button>
-                        <button class="p-3 text-xl text-primary bg-white rounded-lg mr-3">
-                            <i class="fa-regular fa-handshake"></i>
-                            علاقات
-                        </button>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-7">
-                        <div class="mb-4">
-                            <label for="" class="flex mb-2 text-[#9B2E2E] items-center">
-                                <img src="{{ asset('image/polygon-small-dark.svg') }}" alt="">
-                                الاسم الأول
-                            </label>
-                            <input type="text" class="p-6 bg-white border-0 rounded-lg w-full outline-none"
-                                   style="box-shadow: 0px 2px 0px #9B2E2E;">
-                        </div>
-                        <div class="mb-4">
-                            <label for="" class="flex mb-2 text-[#9B2E2E] items-center">
-                                <img src="{{ asset('image/polygon-small-dark.svg') }}" alt="">
-                                اسم العائلة
-                            </label>
-                            <input type="text" class="p-6 bg-white border-0 rounded-lg w-full outline-none"
-                                   style="box-shadow: 0px 2px 0px #9B2E2E;">
-                        </div>
-                        <div class="mb-4">
-                            <label for="" class="flex mb-2 text-[#9B2E2E] items-center">
-                                <img src="{{ asset('image/polygon-small-dark.svg') }}" alt="">
-                                البريد الإلكتروني *
-                            </label>
-                            <input type="email" class="p-6 bg-white border-0 rounded-lg w-full outline-none"
-                                   style="box-shadow: 0px 2px 0px #9B2E2E;">
-                        </div>
-                        <div class="mb-4">
-                            <label for="" class="flex mb-2 text-[#9B2E2E] items-center">
-                                <img src="{{ asset('image/polygon-small-dark.svg') }}" alt="">
-                                تأكيد البريد الإلكتروني *
-                            </label>
-                            <input type="email" class="p-6 bg-white border-0 rounded-lg w-full outline-none"
-                                   style="box-shadow: 0px 2px 0px #9B2E2E;">
-                        </div>
-                        <div class="mb-4">
-                            <label for="" class="flex mb-2 text-[#9B2E2E] items-center">
-                                <img src="{{ asset('image/polygon-small-dark.svg') }}" alt="">
-                                الاسم الأولرقم الهاتف *
-                            </label>
-                            <input type="tel" class="p-6 bg-white border-0 rounded-lg w-full outline-none"
-                                   style="box-shadow: 0px 2px 0px #9B2E2E;">
-                        </div>
-                        <div class="mb-4">
-                            <label for="" class="flex mb-2 text-[#9B2E2E] items-center">
-                                <img src="{{ asset('image/polygon-small-dark.svg') }}" alt="">
-                                اسم الشركة
-                            </label>
-                            <input type="text" class="p-6 bg-white border-0 rounded-lg w-full outline-none"
-                                   style="box-shadow: 0px 2px 0px #9B2E2E;">
-                        </div>
-                        <div class="mb-4">
-                            <label for="" class="flex mb-2 text-[#9B2E2E] items-center">
-                                <img src="{{ asset('image/polygon-small-dark.svg') }}" alt="">
-                                عنوان النشاط التجاري
-                            </label>
-                            <input type="text" class="p-6 bg-white border-0 rounded-lg w-full outline-none"
-                                   style="box-shadow: 0px 2px 0px #9B2E2E;">
-                        </div>
-                        <div class="mb-4">
-                            <label for="" class="flex mb-2 text-[#9B2E2E] items-center">
-                                <img src="{{ asset('image/polygon-small-dark.svg') }}" alt="">
-                                أنا مهتم بـ
-                            </label>
-                            <div class="relative">
-                                <input type="text" class="p-6 bg-white border-0 rounded-lg w-full outline-none"
-                                       style="box-shadow: 0px 2px 0px #9B2E2E;">
-                                <button class="p-4 bg-primary rounded-lg text-white absolute top-2 left-2">
-                                    <i class="fa-regular fa-paper-plane"></i>
-                                    أرسال
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
+        <livewire:contact-form />
     </section>
 
 </x-dynamic-component>

@@ -2,7 +2,7 @@
     $menu = \SolutionForest\FilamentCms\Facades\FilamentCms::getNavigation('main-menu') ?? [];
 @endphp
 <nav class="">
-    <nav class="bg-white border-gray-200 dark:bg-gray-900 mb-10" id="nav-bar">
+    <nav class="bg-white border-gray-200 mb-10" id="nav-bar">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 relative">
             <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="{{ asset('image/logo.svg') }}" class="h-12" alt="">
@@ -22,37 +22,47 @@
                     <li>
                         <a href="/"
                            class="block py-2 px-3 text-white bg-primary rounded md:bg-transparent md:text-primary md:p-0 dark:text-white md:dark:text-blue-500"
-                           aria-current="page" wire:navigate>الرئيسية</a>
+                           aria-current="page" wire:navigate>
+                           {{ __('global.menu.home') }}
+                        </a>
                     </li>
                     <li>
                         <a href="/about-us"
                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                           wire:navigate>من نحن</a>
+                           wire:navigate>
+                           
+                           {{ __('global.menu.about-us') }}
+                        </a>
                     </li>
                     <li>
                         <a href="/invest-in-oman-page"
                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                           wire:navigate>استثمر في عُمان</a>
+                           wire:navigate>
+                           {{ __('global.menu.invest-in-oman') }}</a>
                     </li>
                     <li>
                         <a href="/whyoman"
                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                           wire:navigate>لماذا سلطنة عُمان</a>
+                           wire:navigate>
+                           {{ __('global.menu.why-oman') }}  </a>
                     </li>
                     <li>
                         <a href="/legislation"
                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                           wire:navigate>التشريعات</a>
+                           wire:navigate>
+                           {{ __('global.menu.legislation') }}</a>
                     </li>
                     <li>
                         <a href="/blogs"
                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                           wire:navigate>المركز الأعلامي</a>
+                           wire:navigate>
+                           {{ __('global.menu.media-center') }}</a>
                     </li>
                     <li>
                         <a href="/contact-us" wire:navigate
-                           class="bg-primary text-white rounded-full px-4 py-2 inline-block mt-3 md:inline md:mt-0">توصل
-                            معنا</a>
+                           class="bg-primary text-white rounded-full px-4 py-2 inline-block mt-3 md:inline md:mt-0">
+                           {{ __('global.menu.contact-us') }}
+                            </a>
                     </li>
                     @if (app()->getLocale() == 'en')
                         <li>

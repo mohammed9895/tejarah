@@ -15,8 +15,8 @@ use Illuminate\Support\Facades\Session;
 */
 
 Route::get('/language/{locale}', function ($locale) {
-   // app()->setLocale($locale);
-   // Session::put('locale2', $locale);
-   return dd(Session::all());
+   app()->setLocale($locale);
+   Session::put('locale', $locale);
+   //return dd(Session::all());
     return redirect()->back();
 })->name('language.switch');
