@@ -16,7 +16,7 @@
                       description="{{ $page->data['content'] }}"></x-partials.title>
                       <section class="container bg-light-gray/60 backdrop-blur-2xl md:rounded-lg sticky top-0 z-30 overflow-x-scroll navbar">
                         <div class="flex justify-between whitespace-nowrap nav-container">
-                            <a href="#speech-of-his-excellency-the-minister" class="flex items-center flex-col py-8 border-b-2 border-transparent ml-5">
+                            <a href="#speech-of-his-excellency-the-minister" class="flex items-center flex-col py-8 border-b-2 border-transparent ml-5 ltr:ml-0">
                                 <h2 class="text-gray-500 mb-4">01</h2>
                                 <h1 class="text-xl font-bold text-gray-700">{{ __('messages.speech_of_the_minister') }}</h1>
                             </a>
@@ -50,8 +50,8 @@
 
     <section id="speech-of-his-excellency-the-minister" class="py-36 container">
         <div class="flex flex-col md:flex-row justify-between items-center">
-            <div class="w-full md:w-1/3 mx-auto bg-primary rounded-3xl flex items-center justify-center ml-10">
-                <img src="/storage/{{ $page->data['minister_image'] }}" alt="">
+            <div class="w-full md:w-1/3 mx-auto bg-primary rounded-3xl flex items-center justify-center ml-10 ltr:mr-10 ltr:ml-0">
+                <img src="/storage/{{ $page->data['minister_image'] }}"  alt="">
             </div>
             <div class="w-full mt-10 md:w-2/3">
                 <h1 class="text-3xl font-bold mb-5">{{ $page->data['minister_message_title'] }}</h1>
@@ -71,7 +71,7 @@
                                 class=" w-28 h-28 bg-secondary text-primary text-center flex items-center justify-center text-5xl rounded-lg">
                             <i class="fa-regular fa-eye"></i>
                         </div>
-                        <div class="flex-1 mr-4">
+                        <div class="flex-1 mr-4 ltr:ml-4 ltr:mr-0">
                             <h1 class="text-secondary text-3xl mb-3 font-bold">{{ $page->data['vision_title'] }}</h1>
                             <p class="text-lg text-secondary">{{ $page->data['vision_content'] }}</p>
                         </div>
@@ -83,14 +83,14 @@
                                 class=" w-28 h-28 bg-primary text-secondary text-center flex items-center justify-center text-5xl rounded-lg">
                             <i class="fa-regular fa-comment"></i>
                         </div>
-                        <div class="flex-1 mr-4">
+                        <div class="flex-1 mr-4 ltr:ml-4 ltr:mr-0">
                             <h1 class="text-primary text-3xl mb-3 font-bold">{{ $page->data['mission_title'] }}</h1>
                             <p class="text-md text-primary">{{ $page->data['mission_content'] }}</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="flex-1 mt-10 md:mr-6 ">
+            <div class="flex-1 mt-10 md:mr-6 ltr:md:ml-6 ltr:md:mr-0">
                 <h1 class="text-primary text-3xl font-bold mb-5"> {{__('messages.values')}} </h1>
                 <div class="grid grid-cols-2 gap-8">
                     @foreach($page->data['values'] as $value)
@@ -99,7 +99,7 @@
                                     class="w-12 h-12 bg-secondary rounded-lg text-primary text-4xl flex items-center justify-center">
                                 <i class="fa-solid fa-check"></i>
                             </div>
-                            <h2 class="text-2xl mr-2 text-primary">{{ $value['value_title'] }}</h2>
+                            <h2 class="text-2xl mr-2 ltr:ml-2 ltr:mr-0 text-primary">{{ $value['value_title'] }}</h2>
                         </div>
                     @endforeach
                 </div>
@@ -131,7 +131,7 @@
                 @foreach($page->data['specialties'] as $specialization)
                     <div class="flex items-start flex-col md:flex-row">
                         <div
-                            class="bg-primary ml-4 text-secondary w-20 h-20 md:w-44 md:h-44 text-2xl mb-2 md:mb-0 md:text-5xl flex items-center justify-center rounded-lg">
+                            class="bg-primary ml-4 ltr:mr-4 ltr:ml-0 text-secondary w-20 h-20 md:w-44 md:h-44 text-2xl mb-2 md:mb-0 md:text-5xl flex items-center justify-center rounded-lg">
                             <i class="fa-solid fa-boxes-stacked"></i>
                         </div>
                         <div class="flex-1">
@@ -161,7 +161,7 @@
                             <h3 class="text-gray-700">{{ $item['location'] }}</h3>
                         </div>
                         <div class="flex mt-5 items-center">
-                            <div class="text-primary text-3xl ml-3">
+                            <div class="text-primary text-3xl ml-3 ltr:mr-3 ltr:ml-0">
                                 <i class="fa-solid fa-at"></i>
                             </div>
                             <div>
@@ -177,7 +177,7 @@
 
     <section id="nazdaher" class="py-36 container">
         <div class="flex flex-col md:flex-row justify-between items-center">
-            <div class="w-full md:w-1/3 mx-auto bg-primary rounded-3xl flex items-center justify-center ml-10">
+            <div class="w-full md:w-1/3 mx-auto bg-primary rounded-3xl flex items-center justify-center ml-10 ltr:mr-10 ltr:ml-0">
                 <img src="/storage/{{ $page->data['nazdaher_image'] }}" alt="">
             </div>
             <div class="w-full mt-10 md:mt-0 md:w-2/3">

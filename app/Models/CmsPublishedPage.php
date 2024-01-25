@@ -9,7 +9,8 @@ use Spatie\Translatable\HasTranslations;
 
 class CmsPublishedPage extends BaseModel
 {
-    use HasFactory, HasTranslations;
+    use HasFactory;
+    use HasTranslations;
 
     public $translatable = [
         'title',

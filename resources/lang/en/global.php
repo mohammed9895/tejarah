@@ -20,6 +20,8 @@ return [
     // whyoman
     'get-more-info' => 'Discover More',
     'about-investor-residency' => 'about Investor Residency Program',
+    'four-axios-for-vision' => 'The four axes of vision',
+    'oman-2040' => 'Oman 2040',
     // footer
     'join-maillist' => 'Join Email List',
     'to-recive-news' => 'To Recive the latest News and events',

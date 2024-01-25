@@ -13,7 +13,6 @@
     component="filament-cms::{{$theme}}.page"
     :layout="$layout">
 
-    @dd(session()->all())
     <style>
         .slider-container input[type=radio] {
             display: none;
@@ -200,9 +199,9 @@
                         <p class="mb-5">{{ $page->data['slider_1_description'] }}</p>
                         <div class="flex">
                             <a href="{{ $page->data['slider_1_primary_button_link'] }}"
-                               class="bg-dark-gray text-white p-3 rtl:ml-3 rounded-md">{{ $page->data['slider_1_primary_button_text'] }}</a>
+                               class="bg-dark-gray text-white p-3 mr-3 rtl:ml-3 rtl:mr-0 rounded-md">{{ $page->data['slider_1_primary_button_text'] }}</a>
                             <a href="{{ $page->data['slider_1_secondary_button_link'] }}"
-                               class="bg-mid-gray text-dark-gray p-3 rtl:ml-3 rounded-md">{{ $page->data['slider_1_secondary_button_text'] }}</a>
+                               class="bg-mid-gray text-dark-gray p-3 mr-3 rtl:ml-3 rtl:mr-0 rounded-md">{{ $page->data['slider_1_secondary_button_text'] }}</a>
                         </div>
                     </div>
                     <div id="info-2" class="hidden">
@@ -210,9 +209,9 @@
                         <p class="mb-5">{{ $page->data['slider_2_description'] }}</p>
                         <div class="flex">
                             <a href="{{ $page->data['slider_2_primary_button_link'] }}"
-                               class="bg-dark-gray text-white p-3 rtl:ml-3 rounded-md">{{ $page->data['slider_2_primary_button_text'] }}</a>
+                               class="bg-dark-gray text-white p-3 mr-3 rtl:ml-3 rtl:mr-0 rounded-md">{{ $page->data['slider_2_primary_button_text'] }}</a>
                             <a href="{{ $page->data['slider_2_secondary_button_link'] }}"
-                               class="bg-mid-gray text-dark-gray p-3 rtl:ml-3 rounded-md">{{ $page->data['slider_2_secondary_button_text'] }}</a>
+                               class="bg-mid-gray text-dark-gray p-3 mr-3 rtl:ml-3 rtl:mr-0 rounded-md">{{ $page->data['slider_2_secondary_button_text'] }}</a>
                         </div>
                     </div>
                     <div id="info-3" class="hidden">
@@ -220,9 +219,9 @@
                         <p class="mb-5">{{ $page->data['slider_3_description'] }}</p>
                         <div class="flex">
                             <a href="{{ $page->data['slider_3_primary_button_link'] }}"
-                               class="bg-dark-gray text-white p-3 rtl:ml-3 rounded-md">{{ $page->data['slider_3_primary_button_text'] }}</a>
+                               class="bg-dark-gray text-white p-3 mr-3 rtl:ml-3 rounded-md">{{ $page->data['slider_3_primary_button_text'] }}</a>
                             <a href="{{ $page->data['slider_3_secondary_button_link'] }}"
-                               class="bg-mid-gray text-dark-gray p-3 rtl:ml-3 rounded-md">{{ $page->data['slider_3_secondary_button_text'] }}</a>
+                               class="bg-mid-gray text-dark-gray p-3 mr-3 rtl:ml-3 rounded-md">{{ $page->data['slider_3_secondary_button_text'] }}</a>
                         </div>
                     </div>
                     <div class="flex items-center mt-6 space-x-5 rtl:space-x-reverse">
@@ -283,15 +282,15 @@
                         <a class="relative mb-10 group inline-block" href="{{ $site['link'] }}" target="_blank">
                             <div
                                 class="flex items-center p-10 bg-light-gray rounded-2xl group-hover:bg-gradient-to-r group-hover:from-[{{ $site['starting_color'] }}] group-hover:to-[{{ $site['ending_color'] }}]">
-                                <div class="bg-white rounded-lg p-10 ml-4">
+                                <div class="bg-white rounded-lg p-10 mr-4 rtl:mr-0 rtl:ml-4">
                                     <img src="/storage/{{ $site['logo'] }}" class="w-28" alt="">
                                 </div>
-                                <div class="text-right">
+                                <div class="text-left rtl:text-right">
                                     <h1 class="text-3xl font-bold text-[{{ $site['starting_color'] }}] group-hover:text-white" style="color: {{ $site['starting_color'] }};">{{ $site['title'] }}</h1>
                                     <p class="text-lg text-gray-500 mt-3 group-hover:text-white">{{ $site['description'] }}</p>
                                 </div>
                             </div>
-                            <div class="absolute hidden top-1/2 left-1 transform -translate-x-1/2 -translate-y-1/2
+                            <div class="absolute hidden top-1/2 rtl:left-1 right-0 rtl:right-auto transform translate-x-1/2 rtl:-translate-x-1/2 -translate-y-1/2
  w-24 h-24 rounded-full bg-white shadow text-[{{ $site['starting_color'] }}] text-5xl leading-[96px] text-center group-hover:block" style="color: {{ $site['starting_color'] }};">
                                 <i class="fa-regular fa-paper-plane"></i>
                             </div>

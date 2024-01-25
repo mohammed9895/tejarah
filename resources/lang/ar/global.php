@@ -26,7 +26,6 @@ return [
     'subscribe' => 'أشترك',
     'address-full-tejarah' => ' وزارة التجارة والصناعة وترويج الاستثمار, PO Box 550, مسقط 100,سلطنة عمان',
     'our-services' => 'خدماتنا',
-    
-
-    
+    'four-axios-for-vision' => 'المحاور الأربعة لرؤية',
+    'oman-2040' => 'عمان ٢٠٤٠',
 ];

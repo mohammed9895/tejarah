@@ -35,7 +35,7 @@
                             </a>
                         </div>
                     </section>
-                    
+
 
 
     <section class="py-36 container" id="mechanism-of-action">
@@ -127,7 +127,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full md:flex-1 mr-6">
+            <div class="w-full md:flex-1 mr-6 ltr:ml-6 ltr:mr-0">
                 <div class="relative text-gray-800 text-center mb-10">
                     <h1 class="text-3xl font-bold mb-5">{{ $page->data['establishing_a_business_title']  }}</h1>
                     <div class="w-80 h-4 bg-secondary mx-auto -mt-6"></div>
@@ -143,7 +143,7 @@
                                 <img class="absolute bottom-0 z-20 w-20 right-2"
                                      src="{{ asset('image/polygon-small-light.svg') }}" alt="">
                             </div>
-                            <h1 class="text-lg text-gray-800 mr-4 font-bold">{{ $feature['title'] }}</h1>
+                            <h1 class="text-lg text-gray-800 mr-4 ltr:ml-4 mr-0 font-bold">{{ $feature['title'] }}</h1>
                         </div>
                     @endforeach
                 </div>
@@ -172,8 +172,8 @@
                     <img src="/storage/{{ $page->data['here_for_help_main_image'] }}" class="w-[90%]" alt="">
                 </div>
             </div>
-            <div class="w-full md:flex-1 mr-6 mt-16 md:mt-0">
-                <div class="relative text-gray-800 text-right mb-10">
+            <div class="w-full md:flex-1 mr-6 ltr:ml-6 ltr:mr-0 mt-16 md:mt-0">
+                <div class="relative text-gray-800 text-right ltr:text-left mb-10">
                     <h1 class="text-3xl font-bold mb-5">{{ $page->data['here_for_help_main_title'] }}</h1>
                     <div class="w-56 h-4 bg-secondary -mt-10"></div>
                 </div>
@@ -186,7 +186,7 @@
                                 <img class="absolute bottom-0 z-20 w-20 right-2"
                                      src="{{ asset('image/polygon-small-light.svg') }}" alt="">
                             </div>
-                            <h1 class="text-lg text-gray-800 mr-4 font-bold">{{ $feature['title'] }}</h1>
+                            <h1 class="text-lg text-gray-800 mr-4 ltr:ml-4 ltr:mr-0 font-bold">{{ $feature['title'] }}</h1>
                         </div>
                     @endforeach
                 </div>
@@ -202,8 +202,8 @@
                     <img src="/storage/{{ $page->data['invest_in_oman_main_image'] }}" class="w-[90%]" alt="">
                 </div>
             </div>
-            <div class="w-full md:flex-1 mr-6 mt-16 md:mt-0">
-                <div class="relative text-gray-800 text-right mb-10">
+            <div class="w-full md:flex-1 mr-6 ltr:ml-6 mr-0 mt-16 md:mt-0">
+                <div class="relative text-gray-800 text-right ltr:text-left mb-10">
                     <h1 class="text-3xl font-bold mb-5">{{ $page->data['invest_in_oman_main_title'] }}</h1>
                     <div class="w-56 h-4 bg-secondary -mt-10"></div>
                 </div>
@@ -237,13 +237,13 @@
                @foreach($page->data['e_services'] as $service)
                     <div class="bg-white rounded flex items-center justify-between px-5 p-10">
                         <div class="px-4 w-60">
-                            <img src="/storage/{{ $service['logo'] }}" class="" alt="">
+                            <img src="/storage/{{ $service['logo'] }}" class="w-full" alt="">
                         </div>
-                        <div class="px-4 border-r border-gray-200">
+                        <div class="px-4 border-r ltr:border-l ltr:border-r-0 border-gray-200">
                             <p>{{ $service['description'] }}</p>
                             <div class="flex mt-5">
                                 <a href="{{ $service['website'] }}"
-                                   class="flex items-center justify-center bg-primary text-white rounded w-10 h-10 ml-2"><i
+                                   class="flex items-center justify-center bg-primary text-white rounded w-10 h-10 ml-2 ltr:ml-0"><i
                                         class="fa-solid fa-globe"></i></a>
                                 <a href="{{ $service['website'] }}"
                                    class="flex items-center justify-center bg-primary text-white rounded w-10 h-10 ml-2"><i
@@ -263,102 +263,7 @@
     </section>
 
     <section class="py-36">
-        <div class="container bg-secondary rounded-3xl flex flex-col md:flex-row items-center justify-between p-10">
-            <div class="w-full md:w-1/3 relative">
-                <img src="{{ asset('image/contact.svg') }}" class="rounded" alt="">
-                <img src="{{ asset('image/arrow.svg') }}" class="absolute -top-10 -right-10 w-36" alt="">
-            </div>
-            <div class="w-full md:flex-1 mr-6 mt-16 md:mt-0">
-                <h1 class="text-primary text-3xl font-bold">التواصل مع مستشار علاقات الاستثمار</h1>
-                <p class="text-md text-gray-800 mt-3">يمكنك التواصل مع مدير علاقات الاستثمار من فريقنا للحصول على الدعم
-                    والمشورة المناسبين لاحتياجاتك. يمكنك إرسال استفساراتك إلى عنوان البريد الإلكتروني
-                    invest@tejarah.gov.om أو ملء استمارة التواصل أدناه وسيتم التواصل معك.</p>
-                <form action="">
-                    <div class="flex mt-5">
-                        <button class="p-3 text-xl text-white bg-primary rounded-lg">
-                            <i class="fa-solid fa-money-bill-wave"></i>
-                            أستثمار
-                        </button>
-                        <button class="p-3 text-xl text-primary bg-white rounded-lg mr-3">
-                            <i class="fa-regular fa-handshake"></i>
-                            علاقات
-                        </button>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-7">
-                        <div class="mb-4">
-                            <label for="" class="flex mb-2 text-[#9B2E2E] items-center">
-                                <img src="{{ asset('image/polygon-small-dark.svg') }}" alt="">
-                                الاسم الأول
-                            </label>
-                            <input type="text" class="p-6 bg-white border-0 rounded-lg w-full outline-none"
-                                   style="box-shadow: 0px 2px 0px #9B2E2E;">
-                        </div>
-                        <div class="mb-4">
-                            <label for="" class="flex mb-2 text-[#9B2E2E] items-center">
-                                <img src="{{ asset('image/polygon-small-dark.svg') }}" alt="">
-                                اسم العائلة
-                            </label>
-                            <input type="text" class="p-6 bg-white border-0 rounded-lg w-full outline-none"
-                                   style="box-shadow: 0px 2px 0px #9B2E2E;">
-                        </div>
-                        <div class="mb-4">
-                            <label for="" class="flex mb-2 text-[#9B2E2E] items-center">
-                                <img src="{{ asset('image/polygon-small-dark.svg') }}" alt="">
-                                البريد الإلكتروني *
-                            </label>
-                            <input type="email" class="p-6 bg-white border-0 rounded-lg w-full outline-none"
-                                   style="box-shadow: 0px 2px 0px #9B2E2E;">
-                        </div>
-                        <div class="mb-4">
-                            <label for="" class="flex mb-2 text-[#9B2E2E] items-center">
-                                <img src="{{ asset('image/polygon-small-dark.svg') }}" alt="">
-                                تأكيد البريد الإلكتروني *
-                            </label>
-                            <input type="email" class="p-6 bg-white border-0 rounded-lg w-full outline-none"
-                                   style="box-shadow: 0px 2px 0px #9B2E2E;">
-                        </div>
-                        <div class="mb-4">
-                            <label for="" class="flex mb-2 text-[#9B2E2E] items-center">
-                                <img src="{{ asset('image/polygon-small-dark.svg') }}" alt="">
-                                الاسم الأولرقم الهاتف *
-                            </label>
-                            <input type="tel" class="p-6 bg-white border-0 rounded-lg w-full outline-none"
-                                   style="box-shadow: 0px 2px 0px #9B2E2E;">
-                        </div>
-                        <div class="mb-4">
-                            <label for="" class="flex mb-2 text-[#9B2E2E] items-center">
-                                <img src="{{ asset('image/polygon-small-dark.svg') }}" alt="">
-                                اسم الشركة
-                            </label>
-                            <input type="text" class="p-6 bg-white border-0 rounded-lg w-full outline-none"
-                                   style="box-shadow: 0px 2px 0px #9B2E2E;">
-                        </div>
-                        <div class="mb-4">
-                            <label for="" class="flex mb-2 text-[#9B2E2E] items-center">
-                                <img src="{{ asset('image/polygon-small-dark.svg') }}" alt="">
-                                عنوان النشاط التجاري
-                            </label>
-                            <input type="text" class="p-6 bg-white border-0 rounded-lg w-full outline-none"
-                                   style="box-shadow: 0px 2px 0px #9B2E2E;">
-                        </div>
-                        <div class="mb-4">
-                            <label for="" class="flex mb-2 text-[#9B2E2E] items-center">
-                                <img src="{{ asset('image/polygon-small-dark.svg') }}" alt="">
-                                أنا مهتم بـ
-                            </label>
-                            <div class="relative">
-                                <input type="text" class="p-6 bg-white border-0 rounded-lg w-full outline-none"
-                                       style="box-shadow: 0px 2px 0px #9B2E2E;">
-                                <button class="p-4 bg-primary rounded-lg text-white absolute top-2 left-2">
-                                    <i class="fa-regular fa-paper-plane"></i>
-                                    أرسال
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
+        <livewire:contact-form />
     </section>
 
 </x-dynamic-component>

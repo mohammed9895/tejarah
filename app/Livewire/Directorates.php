@@ -7,7 +7,7 @@ use Livewire\Component;
 class Directorates extends Component
 {
     public $directorates;
-    public $number = '02';
+    public $number = '01';
     public function mount($directorates)
     {
         $this->directorates = $directorates;
