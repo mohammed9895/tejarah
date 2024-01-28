@@ -98,7 +98,7 @@ return [
 
     'models' => [
         'cms_page' => \App\Models\CmsPage::class,
-        'cms_published_page' => \App\Models\CmsPublishedPage::class,
+        'cms_published_page' => Models\CmsPublishedPage::class,
         'cms_page_navigation' => Models\CmsPageNavigation::class,
         'cms_page_navigation_category' => Models\CmsPageNavigationCategory::class,
         'cms_tag' => Models\CmsTag::class,
