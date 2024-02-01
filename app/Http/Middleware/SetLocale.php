@@ -17,7 +17,7 @@ class SetLocale
      */
     public function handle(Request $request, Closure $next): Response
     {
-        $locale = session()->get('locale');
+        $locale = session()->get('locale', 'ar');
         app()->setLocale($locale);
        /*  if (!$request->has('preview')) {
             // Redirect to the same URL with the 'preview' query parameter
