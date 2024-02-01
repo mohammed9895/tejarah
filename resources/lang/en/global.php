@@ -24,7 +24,7 @@ return [
     'oman-2040' => 'Oman 2040',
     // footer
     'join-maillist' => 'Join Email List',
-    'to-recive-news' => 'To Recive the latest News and events',
+    'to-recive-news' => 'To Receive the latest News and events',
     'subscribe' => 'Subscribe',
     'address-full-tejarah' => 'Ministry of Commerce, Industry and Investment Promotion, PO Box 550, Muscat 100, Sultanate of Oman'
 ];

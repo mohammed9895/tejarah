@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 return [
     'services' => 'خدماتنا',
@@ -8,7 +8,7 @@ return [
     'important_links' => 'روابط مهمه',
     'news' => 'الاخبار',
     'information_bank' => 'بنك المعلومات',
-    'frequent_questions' => 'الأسئلة الشاعة',
+    'frequent_questions' => 'الأسئلة الشائعة',
     'archive' => 'الارشيف',
     'general_directorates' => 'المديريات العامة',
     'affiliated_directorates_and_departments' => 'المديريات والإدارات التابعة',
