@@ -33,7 +33,7 @@ class ContactForm extends Component
             'interested_in' => 'nullable|string',
         ]);
 
-        Mail::to('info@tejarah.gov.om')->send(new \App\Mail\ContactForm($this->first_name, $this->family_name, $this->email, $this->phone,
+        Mail::to('toshiba9895@gmail.com')->send(new \App\Mail\ContactForm($this->first_name, $this->family_name, $this->email, $this->phone,
             $this->company_name, $this->cr, $this->interested_in));
         session()->flash('message', 'Email Sent Successfully');
         $this->reset();
