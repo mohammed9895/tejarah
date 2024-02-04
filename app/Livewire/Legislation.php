@@ -11,11 +11,22 @@ class Legislation extends Component
 
     public $legislations;
 
-    public $year;
+    public $year = 2024;
     public $legislationCategoriesList = [];
     public function mount()
     {
         $this->legislations = \App\Models\Legislation::all();
+    }
+
+    public function updatedYear($year)
+    {
+        if ($this->year != '')
+        {
+            $this->legislations = \App\Models\Legislation::orderBy('created_at', 'DESC')->whereYear('year', '=', $this->year)->orderBy('created_at', 'desc')->get();
+        }
+        else {
+            $this->legislations = \App\Models\Legislation::all();
+        }
     }
     public function render()
     {
@@ -26,10 +37,8 @@ class Legislation extends Component
         else {
             $this->legislations = \App\Models\Legislation::all();
         }
-        $highestYear = Carbon::parse(\App\Models\Legislation::max('year'))->format('Y');
-        $lowestYear = Carbon::parse(\App\Models\Legislation::min('year'))->format('Y');
 
-        return view('livewire.legislation', ['legislationCategories' => LegislationCategory::all(), 'highestYear' => $highestYear, 'lowestYear' => $lowestYear]);
+        return view('livewire.legislation', ['legislationCategories' => LegislationCategory::all()]);
     }
 
 }

@@ -2,31 +2,15 @@
 @php
     $menu = \SolutionForest\FilamentCms\Facades\FilamentCms::getNavigation('footer') ?? [];
 @endphp
-<section class="relative">
-    <div class="w-full md:w-2/3 container px-10 py-96 flex items-center justify-center before:content-[''] before:w-full md:before:w-1/2 before:absolute before:top-1/2 md:before:right-0 before:bottom-0 before:left-1/2 before:transform before:-translate-x-1/2 before:-translate-y-1/2 before:bg-secondary md:before:rotate-[2deg] before:rounded-3xl before:-z-20
-        after:content-[''] after:w-full md:after:w-1/2 after:absolute after:top-1/2 md:after:right-0 after:bottom-0 after:left-1/2 after:transform after:-translate-x-1/2 after:-translate-y-1/2 after:bg-primary md:after:rotate-[-2deg] after:rounded-3xl
-         after:-z-10">
-        <div>
-            <h1 class="text-center text-white font-bold text-4xl">
-               {{__('global.join-maillist')}}
-                <br>
-                {{__('global.to-recive-news')}}
-            </h1>
-            <div class="mt-6 relative">
-                <input type="text" placeholder="البريد الإلكتروني" class="placeholder-gray-500 w-full p-5 rounded-lg">
-                <button class="absolute left-2 top-2 bg-primary rounded-lg text-white py-3 px-6">{{__('global.subscribe')}}<i class="fa-regular fa-paper-plane"></i></button>
-            </div>
-        </div>
-    </div>
-</section>
-<footer class="relative bg-light-gray pt-48 -mt-80 -z-50">
+<livewire:rating-form />
+<footer class="relative bg-light-gray pt-48">
     <div class="container flex justify-between items- flex-col md:flex-row space-y-5">
         <div class="w-1/3">
             <a href="/"><img src="{{ asset('image/logo.svg') }}" alt=""></a>
             <p class="text-gray-600 mt-3">
                {{__('global.address-full-tejarah')}}
             </p>
-            <div class="flex space-x-3 rtl:space-x-3  mt-3">
+            <div class="flex space-x-3 rtl:space-x-3 rtl:space-x-reverse mt-3">
                 <a href="https://twitter.com/tejarah_om" class="inline-block rounded text-primary bg-secondary w-8 h-8 text-center leading-loose"><i class="fa-brands fa-x"></i></a>
                 <a href="https://www.youtube.com/channel/UCXd3XBW70tAfqPvnZs2a-Yw" class="inline-block rounded text-primary bg-secondary w-8 h-8 text-center leading-loose"><i class="fa-brands fa-youtube"></i></a>
                 <a href="https://www.instagram.com/tejarah_om/" class="inline-block rounded text-primary bg-secondary w-8 h-8 text-center leading-loose"><i class="fa-brands fa-instagram"></i></a>
@@ -38,23 +22,20 @@
                     <h1 class="mb-5 text-lg font-bold text-primary">{{__('global.menu.about-us')}} </h1>
                     <ul class="space-y-3">
                         <li class="text-gray-600">
-                            <a href="#">{{ __('messages.general_directorates') }}</a>
+                            <a href="/about-us#general-directorates">{{ __('messages.general_directorates') }}</a>
                         </li>
                         <li class="text-gray-600">
-                            <a href="#">{{ __('messages.affiliated_directorates_and_departments') }}</a>
+                            <a href="/about-us#subsidiary-directorates-and-departments">{{ __('messages.affiliated_directorates_and_departments') }}</a>
                         </li>
                     </ul>
                 </div><div class="flex flex-col">
                     <h1 class="mb-5 text-lg font-bold text-primary">{{ __('messages.services') }}</h1>
                     <ul class="space-y-3">
                         <li class="text-gray-600">
-                            <a href="#">{{ __('messages.investment_incentives_guide') }}</a>
+                            <a href="/invest-in-oman-page">{{ __('global.e_services') }}</a>
                         </li>
                         <li class="text-gray-600">
-                            <a href="#">{{ __('messages.services_guide') }}</a>
-                        </li>
-                        <li class="text-gray-600">
-                            <a href="#">{{ __('messages.nizdahr') }}</a>
+                            <a href="/whyoman#investor-residency-program">{{ __('global.investor-residency-program') }}</a>
                         </li>
                     </ul>
                 </div>
@@ -62,16 +43,16 @@
                     <h1 class="mb-5 text-lg font-bold text-primary">{{ __('messages.important_links') }}</h1>
                     <ul class="space-y-3">
                         <li class="text-gray-600">
-                            <a href="#">{{ __('messages.news') }}</a>
+                            <a href="/blogs">{{ __('messages.news') }}</a>
                         </li>
                         <li class="text-gray-600">
-                            <a href="#">{{ __('messages.information_bank') }}</a>
+                            <a href="/informations">{{ __('messages.information_bank') }}</a>
                         </li>
                         <li class="text-gray-600">
-                            <a href="#">{{ __('messages.frequent_questions') }}</a>
+                            <a href="/about-us">{{ __('messages.frequent_questions') }}</a>
                         </li>
                         <li class="text-gray-600">
-                            <a href="#">{{ __('messages.archive') }}</a>
+                            <a href="/legislation">{{ __('global.menu.legislation') }}</a>
                         </li>
                     </ul>
                 </div>
@@ -80,13 +61,13 @@
                     <h1 class="mb-5 text-lg font-bold text-primary">{{__('global.menu.contact-us')}}</h1>
                     <ul class="space-y-3">
                         <li class="text-gray-600">
-                            <a href="#">+968 80000070</a>
+                            <a href="tel:+968 80000070" dir="ltr">+968 80000070</a>
                         </li>
                         <li class="text-gray-600">
-                            <a href="#">info@tejarah.gov.om</a>
+                            <a href="mailto:info@tejarah.gov.om">info@tejarah.gov.om</a>
                         </li>
                         <li class="text-gray-600">
-                            <a href="#">ask@tejarah.gov.om</a>
+                            <a href="mailto:ask@tejarah.gov.om">ask@tejarah.gov.om</a>
                         </li>
                     </ul>
                 </div>

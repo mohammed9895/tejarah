@@ -36,7 +36,7 @@
                         $currentYear = date('Y');
                         $years = range(1970, $currentYear);
                     @endphp
-                    <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an option</label>
+                    <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{{ __('global.choose_year') }}</label>
                     <select id="countries" wire:model.live="year" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                         @foreach($years as $y)
                             <option value="{{ $y }}">{{ $y }}</option>
@@ -49,7 +49,7 @@
             <div class="w-full md:w-2/3">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     @foreach($legislations as $legislation)
-                        <a class="shadow-lg rounded-2xl p-4 inline-block" wire:key="{{ $loop->index }}" href="#">
+                        <div class="shadow-lg rounded-2xl p-4 inline-block" wire:key="{{ $loop->index }}" href="#">
                             <div class="bg-gray-100 w-20 h-20 rounded-2xl flex items-center justify-center mb-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                      stroke-width="1.5"
@@ -64,7 +64,13 @@
                             <p class="text-dark-gray mt-3">
                                 {!!   Str::words($legislation->description, 30, '') !!}
                             </p>
-                        </a>
+                            <a href="{{ url('/storage/' . $legislation->file) }}" target="_blank" class="bg-secondary w-full flex p-3 rounded mt-5 justify-center text-primary hover:text-secondary hover:bg-primary transition-all">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ml-1">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 7.5h-.75A2.25 2.25 0 0 0 4.5 9.75v7.5a2.25 2.25 0 0 0 2.25 2.25h7.5a2.25 2.25 0 0 0 2.25-2.25v-7.5a2.25 2.25 0 0 0-2.25-2.25h-.75m-6 3.75 3 3m0 0 3-3m-3 3V1.5m6 9h.75a2.25 2.25 0 0 1 2.25 2.25v7.5a2.25 2.25 0 0 1-2.25 2.25h-7.5a2.25 2.25 0 0 1-2.25-2.25v-.75" />
+                                </svg>
+                                <div class="">{{ __('global.download') }}</div>
+                            </a>
+                        </div>
                     @endforeach
                 </div>
             </div>

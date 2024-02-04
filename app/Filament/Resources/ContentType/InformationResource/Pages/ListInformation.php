@@ -1,19 +1,19 @@
 <?php
 
-namespace App\Filament\Resources\ContentType\BlogResource\Pages;
+namespace App\Filament\Resources\ContentType\InformationResource\Pages;
 
 use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords;
 use SolutionForest\FilamentCms\Concern;
 use SolutionForest\FilamentCms\Support\Utils;
-use App\Filament\Resources\ContentType\BlogResource;
-use Filament\Actions\LocaleSwitcher;
+use App\Filament\Resources\ContentType\InformationResource;
+ use Filament\Actions\LocaleSwitcher;
 
-class ListBlogs extends ListRecords
+class ListInformation extends ListRecords
 {
-    use ListRecords\Concerns\Translatable;
+     use ListRecords\Concerns\Translatable;
 
-    protected static string $resource = BlogResource::class;
+    protected static string $resource = InformationResource::class;
 
     public function isTableSearchable(): bool
     {
@@ -33,7 +33,7 @@ class ListBlogs extends ListRecords
     protected function getActions(): array
     {
         return [
-            LocaleSwitcher::make(),
+             LocaleSwitcher::make(),
             CreateAction::make(),
         ];
     }

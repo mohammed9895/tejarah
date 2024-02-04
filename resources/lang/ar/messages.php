@@ -29,4 +29,5 @@ return [
     'nazdaher' => 'نزدهر',
     'values' => 'قيمنا',
     'search_legislation' => 'البحث في التشريعات',
+
 ];

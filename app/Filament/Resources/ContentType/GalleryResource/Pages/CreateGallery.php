@@ -1,18 +1,19 @@
 <?php
 
-namespace App\Filament\Resources\ContentType\BlogResource\Pages;
+namespace App\Filament\Resources\ContentType\GalleryResource\Pages;
 
 use Filament\Resources\Pages\CreateRecord;
 use SolutionForest\FilamentCms\Concern;
-use App\Filament\Resources\ContentType\BlogResource;
-use Filament\Actions\LocaleSwitcher;
+use App\Filament\Resources\ContentType\GalleryResource;
 
-class CreateBlog extends CreateRecord
+ use Filament\Actions\LocaleSwitcher;
+
+class CreateGallery extends CreateRecord
 {
     use CreateRecord\Concerns\Translatable;
     use Concern\CanPublishPage;
 
-    protected static string $resource = BlogResource::class;
+    protected static string $resource = GalleryResource::class;
 
     protected function mutateFormDataBeforeCreate(array $data): array
     {
@@ -22,7 +23,7 @@ class CreateBlog extends CreateRecord
     public function getActions(): array
     {
         return array_merge(
-            [LocaleSwitcher::make()],
+         [LocaleSwitcher::make()],
             parent::getActions() ?? [],
         );
     }

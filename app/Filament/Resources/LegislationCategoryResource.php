@@ -19,7 +19,10 @@ class LegislationCategoryResource extends Resource
     use Translatable;
     protected static ?string $model = LegislationCategory::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-newspaper';
+
+    protected static ?string $navigationGroup = 'Legislations';
+
 
     public static function form(Form $form): Form
     {

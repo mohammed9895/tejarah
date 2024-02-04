@@ -1,19 +1,19 @@
 <?php
 
-namespace App\Filament\Resources\ContentType\BlogResource\Pages;
+namespace App\Filament\Resources\ContentType\GalleryResource\Pages;
 
 use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords;
 use SolutionForest\FilamentCms\Concern;
 use SolutionForest\FilamentCms\Support\Utils;
-use App\Filament\Resources\ContentType\BlogResource;
+use App\Filament\Resources\ContentType\GalleryResource;
 use Filament\Actions\LocaleSwitcher;
 
-class ListBlogs extends ListRecords
+class ListGalleries extends ListRecords
 {
     use ListRecords\Concerns\Translatable;
 
-    protected static string $resource = BlogResource::class;
+    protected static string $resource = GalleryResource::class;
 
     public function isTableSearchable(): bool
     {
