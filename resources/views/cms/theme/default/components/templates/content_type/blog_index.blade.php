@@ -16,7 +16,7 @@
                       description="{{ $page->data['content'] }}"></x-partials.title>
 
     <div class="container">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <x-blogs :blogs="$blogs" />
         </div>
     </div>

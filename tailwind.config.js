@@ -11,6 +11,14 @@ export default {
         'text-[#4D008C]',
         ' bg-[#4D008C]',
 
+        'bg-[#02739B]',
+        'bg-[#245fa4]',
+
+        'group-hover:from-[#245fa4]',
+        'group-hover:to-[#95cfc4]',
+        'bg-[#245fa4]',
+        'text-[#245fa4]',
+
         'group-hover:from-[#405ea9]',
         'group-hover:to-[#2a397f]',
         'bg-[#405ea9]',

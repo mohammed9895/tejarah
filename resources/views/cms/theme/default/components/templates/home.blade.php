@@ -107,7 +107,7 @@
                             <div
                                     class="flex items-center flex-col justify-center md:flex-row p-10 bg-light-gray rounded-2xl group-hover:bg-gradient-to-r group-hover:from-[{{ $site['starting_color'] }}] group-hover:to-[{{ $site['ending_color'] }}]">
                                 <div class="bg-white rounded-lg p-10 mr-4 rtl:mr-0 rtl:ml-4">
-                                    <img src="/storage/{{ $site['logo'] }}" class="w-28" alt="">
+                                    <img src="/storage/{{ $site['logo'] }}" class="w-28 h-auto" alt="">
                                 </div>
                                 <div class="text-center md:text-left md:rtl:text-right mt-4">
                                     <h1 class="text-3xl font-bold text-[{{ $site['starting_color'] }}] group-hover:text-white"
@@ -135,7 +135,7 @@
                 <h1 class="text-5xl font-bold text-gray-700">{{ $page->data['media_title'] }}</h1>
                 <p class="mt-5">{{ $page->data['media_description'] }}</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                <x-blogs :blogs="$blogs" />
             </div>
         </section>
