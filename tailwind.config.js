@@ -9,11 +9,21 @@ export default {
         'text-[#02739B]',
         'text-[#492A7D]',
         'text-[#4D008C]',
-        ' bg-[#4D008C]'
+        ' bg-[#4D008C]',
+
+        'group-hover:from-[#405ea9]',
+        'group-hover:to-[#2a397f]',
+        'bg-[#405ea9]',
+        'text-[#405ea9]',
+
+        'group-hover:from-[#005850]',
+        'group-hover:to-[#7ac143]',
+        'bg-[#005850]',
+        'text-[#005850]',
     ],
     theme: {
         extend: {
-            colors:{
+            colors: {
                 'primary': '#C54139',
                 'secondary': '#E9CDC6',
                 'light-gray': '#EBECE8',
