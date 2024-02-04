@@ -25,31 +25,14 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
           integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+          integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <script src="https://kit.fontawesome.com/79e25a78de.js" crossorigin="anonymous"></script>
-        <style>
-            .owl-dots {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                left: 20px;
-                z-index: 100000;
-                display: flex;
-                flex-direction: column;
-            }
-            .owl-dots button {
-                width: 20px;
-                height: 20px;
-                background: #eee !important;
-                opacity: 0.5;
-                border-radius: 100px;
-                margin-top: 10px;
-            }
-
-            .owl-dot.active {
-                background: #c54139 !important;
-                opacity: 1;
-            }
-        </style>
     @vite('resources/css/app.css')
 </head>
 
@@ -72,12 +55,11 @@
 <script src="{{ asset('js/jquery.min.js') }}"></script>
 <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
 <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
         $(".owl-carousel").owlCarousel({
-            items:1,
-            loop:true,
-            rtl: true,
-            // nav:true,
+            items: 1,
+            loop: true,
+            rtl: {{ app()->getLocale() == 'ar' ? 'true' : 'false' }},
             dots: true,
         });
     });

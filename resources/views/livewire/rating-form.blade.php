@@ -3,10 +3,10 @@
         <div class="w-full md:w-2/3 container px-10 flex items-center justify-center before:content-[''] before:w-full before:h-96 md:before:w-1/2 before:absolute before:top-1/2 md:before:right-0 before:bottom-0 before:left-1/2 before:transform before:-translate-x-1/2 before:-translate-y-1/2 before:bg-secondary md:before:rotate-[2deg] before:rounded-3xl before:-z-20
         after:content-[''] after:w-full after:h-96 md:after:w-1/2 after:absolute after:top-1/2 md:after:right-0 after:bottom-0 after:left-1/2 after:transform after:-translate-x-1/2 after:-translate-y-1/2 after:bg-primary md:after:rotate-[-2deg] after:rounded-3xl
          after:-z-10">
-            <div>
-                <h1 class="text-center text-white font-bold text-2xl md:text-4xl  mx-auto md:pt-10">
+            <div class="w-full md:ltr:w-[50%] md:rtl:w-[50%]">
+                <h1 class="text-center text-white font-bold text-2xl md:text-4xl mx-auto md:pt-10">
                     <div>{{__('global.join-maillist')}}</div>
-                    <div class="mt-6">{{__('global.to-recive-news')}}</div>
+                    <div class="mt-6 ltr:hidden">{{__('global.to-recive-news')}}</div>
                 </h1>
                 <div class="flex items-center justify-center mt-7 space-x-5 space-x-reverse ltr:space-x-5 ">
                     <button wire:click="ratingChange(1)">

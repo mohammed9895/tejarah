@@ -12,6 +12,9 @@ return [
         'legislation' => 'Legislation',
         'contact-us' => 'Contact us',
         'media-center' => 'Media Center',
+        'news' => 'Media Center',
+        'information-bank' => 'Information Bank',
+        'gallery' => 'Gallery',
     ],
     'oman2040vision' => 'Oman 2040 Vision',
     'advantage-oman' => 'Advantage Oman',
@@ -35,4 +38,5 @@ return [
     'download' => 'Download',
     'e_services' => 'E Services',
     'choose_year' => 'Choose Year',
+    'visit_now' => 'Visit Now',
 ];

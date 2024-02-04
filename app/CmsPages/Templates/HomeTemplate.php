@@ -57,9 +57,8 @@ final class HomeTemplate implements CmsPageTemplate
                         ]),
                 ]),
             Forms\Components\Section::make('Supporting Section')
-                ->description('lorem ipsum')
+                ->description('You can change supporting section information')
                 ->schema([
-
                     Forms\Components\TextInput::make('supporting_main_title'),
                     Forms\Components\TextInput::make('supporting_main_description'),
                     Forms\Components\Repeater::make('sites')->schema([
@@ -71,7 +70,15 @@ final class HomeTemplate implements CmsPageTemplate
                         Forms\Components\ColorPicker::make('ending_color'),
                     ])
                         ->collapsed()
-                        ->cloneable()
+                        ->cloneable(),
+                ]),
+            Forms\Components\Section::make('Media Section')
+                ->description('You can change media section information')
+                ->schema([
+                    Forms\Components\TextInput::make('media_title'),
+                    Forms\Components\TextInput::make('media_description'),
+                    Forms\Components\TextInput::make('number_of_posts')
+                    ->integer(),
                 ]),
         ];
     }

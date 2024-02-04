@@ -2,7 +2,7 @@
     $menu = \SolutionForest\FilamentCms\Facades\FilamentCms::getNavigation('main-menu') ?? [];
 @endphp
 <nav class="">
-    <nav class="bg-white border-gray-200 mb-10" id="nav-bar">
+    <nav class="mb-10 relative z-50" id="nav-bar">
         <div class="container flex flex-wrap items-center justify-between mx-auto pt-6 relative">
             <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="{{ asset('image/logo.svg') }}" class="h-12" alt="">

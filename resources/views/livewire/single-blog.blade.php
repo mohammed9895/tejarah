@@ -1,3 +1,0 @@
-<div>
-    @dd($blog)
-</div>
