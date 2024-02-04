@@ -2,7 +2,7 @@
 
 namespace App\Livewire;
 
-use App\Models\Feedbacks;
+use App\Models\Feedback;
 use Illuminate\Support\Facades\RateLimiter;
 use Livewire\Component;
 
