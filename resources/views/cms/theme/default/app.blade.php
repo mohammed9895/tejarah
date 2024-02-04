@@ -61,6 +61,7 @@
             loop: true,
             rtl: {{ app()->getLocale() == 'ar' ? 'true' : 'false' }},
             dots: true,
+            autoplay: true,
         });
     });
 </script>
