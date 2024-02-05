@@ -12,7 +12,7 @@ class Blog extends BaseTemplate implements CmsPageTemplate
     {
         return [
             Forms\Components\RichEditor::make('content'),
-            Forms\Components\FileUpload::make('cover'),
+            Forms\Components\FileUpload::make('cover')->imageEditor(),
         ];
     }
 
