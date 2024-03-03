@@ -79,7 +79,7 @@ class Suggestion extends Component
 
         session()->flash('success', 'شكراً لاقتراحك');
         $title = app()->getLocale() == 'ar' ? 'تم إرسال الاقتراح' : 'Suggestion Sent';
-        Mail::to($this->email)->send(new SuggestionSent($this->name, $this->email, $title));
+//        Mail::to($this->email)->send(new SuggestionSent($this->name, $this->email, $title));
 
         $this->reset();
     }

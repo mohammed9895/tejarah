@@ -81,7 +81,7 @@ class Complaint extends Component
 
         session()->flash('success', __('complaint.success'));
         $title = app()->getLocale() == 'ar' ? 'تم إرسال الاقتراح' : 'Suggestion Sent';
-        Mail::to($this->email)->send(new ComplaintSubmitted($this->name, $this->email, $title));
+//        Mail::to($this->email)->send(new ComplaintSubmitted($this->name, $this->email, $title));
         $this->reset();
     }
     public function render()
