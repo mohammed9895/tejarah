@@ -11,13 +11,13 @@ class Blog extends BaseTemplate implements CmsPageTemplate
     public static function schema(): array
     {
         return [
-            Forms\Components\RichEditor::make('content'),
-            Forms\Components\FileUpload::make('cover')->imageEditor(),
+            Forms\Components\RichEditor::make('content')->label(__('dashboard/blogs.content')),
+            Forms\Components\FileUpload::make('cover')->imageEditor()->label(__('dashboard/blogs.cover')),
         ];
     }
 
     public static function title(): string
     {
-        return 'Blog';
+        return __('dashboard/blogs.blogs');
     }
 }

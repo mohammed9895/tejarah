@@ -11,8 +11,8 @@ class Gallery extends BaseTemplate implements CmsPageTemplate
     public static function schema(): array
     {
         return [
-            Forms\Components\RichEditor::make('caption'),
-            Forms\Components\FileUpload::make('images')->multiple()->image()->directory('galleries'),
+            Forms\Components\RichEditor::make('caption')->label(__('dashboard/galleries.caption')),
+            Forms\Components\FileUpload::make('images')->multiple()->image()->directory('galleries')->label(__('dashboard/galleries.images'))
         ];
     }
 

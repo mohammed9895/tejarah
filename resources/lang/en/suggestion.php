@@ -1,0 +1,31 @@
+<?php
+
+return [
+    'title' => 'Suggestion',
+    'description' => 'We are here to answer your inquiries and meet your needs. You can easily contact us by filling out the following form, as we are at your service to ensure the provision of the required support and assistance.',
+    'name' => 'Full Name',
+    'email' => 'Email',
+    'confirm_email' => 'Confirm Email',
+    'phone' => 'Phone Number',
+    'civil_id' => 'Civil ID',
+    'connected_to_service' => 'Connected to Service',
+    'service_type' => 'Type of Service',
+    'province' => 'Province',
+    'state' => 'State',
+    'attachments' => 'Attachments',
+    'details' => 'Details',
+    'yes' => 'Yes',
+    'no' => 'No',
+    'send' => 'Send',
+    'services' => [
+        'cr_renewal' => 'Commercial Register Renewal',
+        'cr_cancellation' => 'Commercial Register Cancellation',
+        'cr_amendment' => 'Commercial Register Amendment',
+        'cr_transfer' => 'Commercial Register Transfer',
+        'pay_fine' => 'Pay Fine',
+    ],
+    'click_to_upload' => 'Click to Upload',
+    'or_drag_and_drop' => 'Or Drag and Drop Files Here',
+    'province_placeholder' => 'Choose Province',
+    'state_placeholder' => 'Choose State',
+];

@@ -14,6 +14,7 @@ class CreateBlog extends CreateRecord
 
     protected static string $resource = BlogResource::class;
 
+
     protected function mutateFormDataBeforeCreate(array $data): array
     {
         return static::getResource()::mutateFormDataBeforeCreate($data);

@@ -58,7 +58,7 @@
                 <div class="mt-6 relative">
                     <form method="POST" wire:submit="send">
                         @csrf
-                        <input type="text" placeholder="{{ __('global.rate_input_placeholder') }}"
+                        <input type="text" wire:model="message" placeholder="{{ __('global.rate_input_placeholder') }}"
                                class="placeholder-gray-500 w-full p-5 rounded-lg outline-0 max-w-full">
                         <button
                             class="absolute left-2 ltr:left-auto ltr:right-2 top-2 bg-primary rounded-lg text-white py-3 px-6">{{__('global.subscribe')}}

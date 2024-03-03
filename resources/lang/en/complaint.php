@@ -1,0 +1,33 @@
+<?php
+
+return [
+    'title' => 'Complaints',
+    'complaint' => 'Complaint',
+    'description' => 'We are here to answer your inquiries and meet your needs. You can easily contact us by filling out the following form, as we are at your service to ensure the support and assistance required.',
+    'name' => 'Full Name',
+    'email' => 'Email',
+    'confirm_email' => 'Confirm Email',
+    'phone' => 'Phone Number',
+    'civil_id' => 'Civil ID',
+    'connected_to_service' => 'Connected to Service',
+    'service_type' => 'Type of Service',
+    'province' => 'Province',
+    'state' => 'State',
+    'attachments' => 'Attachments',
+    'details' => 'Details',
+    'yes' => 'Yes',
+    'no' => 'No',
+    'send' => 'Send',
+    'services' => [
+        'cr_renewal' => 'Commercial Register Renewal',
+        'cr_cancellation' => 'Commercial Register Cancellation',
+        'cr_amendment' => 'Commercial Register Amendment',
+        'cr_transfer' => 'Commercial Register Transfer',
+        'pay_fine' => 'Pay Fine',
+    ],
+    'summation_type' => 'Summation Type',
+    'online' => 'Online',
+    'offline' => 'Offline',
+    'cr' => 'Commercial Registration Number',
+    'success' => 'Your complaint has been submitted successfully. We will get back to you soon.',
+];

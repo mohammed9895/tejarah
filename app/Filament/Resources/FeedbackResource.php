@@ -9,6 +9,8 @@ use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
+use Filament\Tables\Columns\Summarizers\Average;
+use Filament\Tables\Columns\Summarizers\Count;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
@@ -18,6 +20,24 @@ class FeedbackResource extends Resource
     protected static ?string $model = Feedback::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-star';
+
+    public static function getLabel(): ?string
+    {
+        return __('dashboard/feedbacks.feedback');
+    }
+
+    public static function getPluralLabel(): string
+    {
+        return __('dashboard/feedbacks.feedbacks');
+    }
+
+    public static function singularLabel(): ?string
+    {
+        return __('dashboard/feedbacks.feedback');
+    }
+
+
+
 
     public static function canCreate(): bool
     {
@@ -39,12 +59,12 @@ class FeedbackResource extends Resource
                 Tables\Columns\TextColumn::make('rating')
                     ->badge()
                     ->formatStateUsing(fn(int $state): string => match ($state) {
-                        1 => 'Poor',
-                        2 => 'Fair',
-                        3 => 'Good',
-                        4 => 'Very Good',
-                        5 => 'Excellent',
-                        default => 'none',
+                        1 => __('dashboard/feedbacks.ratings.1'),
+                        2 => __('dashboard/feedbacks.ratings.2'),
+                        3 => __('dashboard/feedbacks.ratings.3'),
+                        4 => __('dashboard/feedbacks.ratings.4'),
+                        5 => __('dashboard/feedbacks.ratings.5'),
+                        default => __('dashboard/feedbacks.ratings.default'),
                     })
                     ->color(fn(int $state): string => match ($state) {
                         1 => 'danger',
@@ -53,9 +73,11 @@ class FeedbackResource extends Resource
                         4 => 'info',
                         5 => 'success',
                         default => 'none',
-                    }),
-                Tables\Columns\TextColumn::make('message')
-                    ->formatStateUsing(fn(string $state): string =>  empty($state) ? 'No Message' : $state)
+                    })->summarize(
+                        Average::make('rating'),
+                    )->label(__('dashboard/feedbacks.rating')),
+                Tables\Columns\TextColumn::make('message')->label(__('dashboard/feedbacks.message')),
+
             ])
             ->filters([
                 //
