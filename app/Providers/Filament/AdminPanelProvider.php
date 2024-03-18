@@ -60,7 +60,7 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->authMiddleware([
                 Authenticate::class,
-            ])->plugin(FilamentCmsPanel::make())
+            ])
             ->plugin(
                 SpatieLaravelTranslatablePlugin::make()
                     ->defaultLocales(['ar', 'en']),
