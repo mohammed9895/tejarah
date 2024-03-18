@@ -17,6 +17,7 @@
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
+        "solution-forest/filament-cms-website-plugin": "^2.0",
         "spatie/laravel-ray": "^1.33"
     },
     "require-dev": {
@@ -73,5 +74,11 @@
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://filament-cms-website-plugin.composer.sh"
+        }
+    ]
 }
