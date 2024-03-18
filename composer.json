@@ -74,11 +74,5 @@
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true,
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://filament-cms-website-plugin.composer.sh"
-        }
-    ]
+    "prefer-stable": true
 }
