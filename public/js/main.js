@@ -1,38 +1,40 @@
-const hamburger_menu = document.getElementById('hamburger-menu');
+document.addEventListener('DOMContentLoaded', function () {
+    const hamburger_menu = document.getElementById('hamburger-menu');
 
 
-hamburger_menu.addEventListener('click', function () {
-    if (document.getElementById('navbar-default').classList.contains('hidden')) {
-        document.getElementById('navbar-default').classList.remove('hidden');
-    }
-    else {
-        document.getElementById('navbar-default').classList.add('hidden');
-    }
-})
-
-function highlightActiveLink(entries) {
-    entries.forEach(entry => {
-        const targetId = entry.target.id;
-        const activeLink = document.querySelector(`.nav-container a[href="#${targetId}"]`);
-
-        if (entry.isIntersecting) {
-            activeLink.classList.add('border-primary');
-            activeLink.classList.remove('border-transparent');
-        } else {
-            activeLink.classList.add('border-transparent');
-            activeLink.classList.remove('border-primary');
+    hamburger_menu.addEventListener('click', function () {
+        if (document.getElementById('navbar-default').classList.contains('hidden')) {
+            document.getElementById('navbar-default').classList.remove('hidden');
         }
-    });
-}
+        else {
+            document.getElementById('navbar-default').classList.add('hidden');
+        }
+    })
+
+    function highlightActiveLink(entries) {
+        entries.forEach(entry => {
+            const targetId = entry.target.id;
+            const activeLink = document.querySelector(`.nav-container a[href="#${targetId}"]`);
+
+            if (entry.isIntersecting) {
+                activeLink.classList.add('border-primary');
+                activeLink.classList.remove('border-transparent');
+            } else {
+                activeLink.classList.add('border-transparent');
+                activeLink.classList.remove('border-primary');
+            }
+        });
+    }
 
 // Create an Intersection Observer to watch for section visibility
-const observer = new IntersectionObserver(highlightActiveLink, { threshold: 0.5 });
+    const observer = new IntersectionObserver(highlightActiveLink, { threshold: 0.5 });
 
 // Observe each section
-document.querySelectorAll('section').forEach(section => {
-    observer.observe(section);
-});
+    document.querySelectorAll('section').forEach(section => {
+        observer.observe(section);
+    });
 
+});
 
 document.addEventListener('livewire:navigated', function () {
     const hamburger_menu = document.getElementById('hamburger-menu');
